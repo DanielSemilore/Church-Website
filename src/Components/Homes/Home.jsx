@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 import Header from './Header'
 import SubHeader1 from './SubHeader1'
+import SubHeader2 from './SubHeader2'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <NavBar />
       <Header />
       <SubHeader1 />
+      <SubHeader2 />
     </div>
   )
 }
