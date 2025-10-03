@@ -15,6 +15,7 @@ import SubHeader1 from "./Components/Homes/SubHeader1";
 import SubHeader2 from "./Components/Homes/SubHeader2";
 import SubHeader3 from "./Components/Homes/SubHeader3";
 import SubHeader4 from "./Components/Homes/SubHeader4";
+import SubHeader5 from "./Components/Homes/SubHeader5";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -30,8 +31,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/sermons" element={<Sermon />} />
       <Route path="/SubHeader1" element={<SubHeader1 />} />
       <Route path="/SubHeader2" element={<SubHeader2 />} />
-      <Route path="/Subheader3" element={<SubHeader3 />} />
+      <Route path="/SubHeader3" element={<SubHeader3 />} />
       <Route path="/SubHeader4" element={<SubHeader4 />} />
+      <Route path="/SubHeader5" element={<SubHeader5 />} />
     </Routes>
   </BrowserRouter>
 );
