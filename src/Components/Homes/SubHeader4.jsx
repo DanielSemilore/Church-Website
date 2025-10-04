@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, Links } from 'react-router-dom'
 import SubHeader5 from './SubHeader5'
 
 const SubHeader4 = () => {
@@ -33,8 +34,9 @@ const SubHeader4 = () => {
               <button className="pl-5 h-15 w-40 bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hover:text-gray-300 hover:font-bold hover:rounded hover:bg-gray-800 hover-pr-2 hover-pl-2 font-bold pt-2 pb-2 uppercase">register</button>
             </section>
           </div>
-          <img src="src/assets/SUB+HEADER.png" alt="Sub Header" className="h-140 w-170" />
+          <img src="src/assets/SUB+HEADER.png" alt="Sub Header" className="h-140 pb-10 w-170" />
         </div>
+        <Link to="/sermons" className="text-sm hover:text-amber-600 hover:font-bold cursor-pointer pl-200">view all sermons</Link>
       </div>
       <div className="flex justify-center h-screen w-full text-black">
         <SubHeader5 />
