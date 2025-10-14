@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import SubHeader3 from './SubHeader3';
 
 const SubHeader2 = () => {
   const [readmore, setReadmore] = useState(false);
@@ -36,9 +35,6 @@ const SubHeader2 = () => {
             </button>
           </div>
         </div>
-      </div>
-      <div className="flex justify-center h-screen w-full text-black">
-        <SubHeader3 />
       </div>
     </div>  
   )

@@ -1,10 +1,9 @@
 import React from 'react'
 import { Link, Links } from 'react-router-dom'
-import SubHeader5 from './SubHeader5'
 
 const SubHeader4 = () => {
   return (
-    <div className="block justify-center h-screen w-full text-black">
+    <div className="block justify-center h-screen w-full text-black mt-150">
       <div className="text-center pt-25">
         <p className="text-xs uppercase pb-5">upcoming sermons</p>
         <h1 className="font-bold uppercase text-4xl">join us and become part</h1>
@@ -37,9 +36,6 @@ const SubHeader4 = () => {
           <img src="src/assets/SUB+HEADER.png" alt="Sub Header" className="h-140 mb-5 w-170" />
         </div>
         <Link to="/sermons" className="text-sm hover:text-amber-600 hover:font-bold cursor-pointer pl-250">view all sermons</Link>
-      </div>
-      <div className="flex justify-center h-screen w-full text-black pt-10">
-        <SubHeader5 />
       </div>
     </div>
   )

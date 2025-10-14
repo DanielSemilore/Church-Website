@@ -1,10 +1,9 @@
-import React from 'react'
-import SubHeader6 from './SubHeader6' 
+import React from 'react' 
 
 const SubHeader5 = () => {
   return (
     <div className="block justify-center bg-[url('src/assets/bg2.png')] bg-cover bg-center h-screen w-full text-black">
-      <div className="text-left bg-white items-center bg-opacity-70 h-100 w-165 ml-75 mt-36">
+      <div className="text-left bg-white items-center bg-opacity-70 h-100 w-165 ml-75 mt-70">
         <div className="font-bold uppercase text-4xl pt-15 pl-10 pb-10">
           <h3 className="pb-3">We want to</h3>
           <h3 className="pb-3">serve the world</h3>
@@ -19,9 +18,6 @@ const SubHeader5 = () => {
         </div>
         <button className="ml-10 font-semibold pl-5 h-15 w-40 bg-orange-200 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded hover:text-gray-300 hover:font-bold hover:rounded hover:bg-gray-800 hover-pr-2 hover-pl-2 uppercase">visit</button>
         <div className="bg-orange-200 h-4 w-full mt-5"></div>
-      </div>
-      <div className="flex justify-center h-screen w-full text-black pt-10">
-        <SubHeader6 />
       </div>
     </div>                    
   )

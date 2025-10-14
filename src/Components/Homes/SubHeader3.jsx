@@ -1,9 +1,8 @@
 import React from 'react'
-import SubHeader4 from './SubHeader4'
 
 const SubHeader3 = () => {
   return (
-    <div className="block justify-center h-screen w-full text-black bg-gray-200">
+    <div className="block justify-center h-screen w-full text-black bg-gray-200 mt-150">
         <div className="text-center uppercase pt-25">
             <p className="text-xs pb-5">Watch and listen</p>
             <h1 className="font-bold text-4xl">The benefits of</h1>
@@ -41,9 +40,6 @@ const SubHeader3 = () => {
                     </div>
                 </div>
             </div>
-        </div>
-        <div className="flex justify-center h-screen w-full text-black">
-            <SubHeader4 />
         </div>
     </div>
   )

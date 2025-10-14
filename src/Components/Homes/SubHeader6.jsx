@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from './Footer'
 
 const SubHeader6 = () => {
   return (
@@ -56,9 +55,6 @@ const SubHeader6 = () => {
             </div>
           </div>
         </div>  
-      </div>
-      <div className="flex justify-center h-screen w-full text-black pt-10">
-        <Footer />
       </div>
     </div>
   )
