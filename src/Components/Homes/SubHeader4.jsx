@@ -20,15 +20,23 @@ const SubHeader4 = () => {
               <h4 className="font-bold uppercase text-2xl pb-8">to our sermons</h4>
               <p className="text-xs pr-10 font-light pb-3">Lorem ipsum dolor sit amet, consectetur</p>
               <p className="text-xs pr-10 font-light pb-8">adipiscing elit, Sed do eiusmod tempor.</p>
-              <div className="pb-5">
-                <div>{/*icon center*/}</div>
-                <p className="font-normal pl-10">Friday 23:39 IST</p>
-                <p className="font-normal pl-10">Saturday 11:20 ISD</p>
+              <div className="pb-5 flex">
+                <div>
+                  <img src="src/assets/Home4.svg" alt="icon4"/>
+                </div>
+                <div>
+                  <p className="font-normal pl-5">Friday 23:39 IST</p>
+                  <p className="font-normal pl-5">Saturday 11:20 ISD</p>
+                </div>
               </div>
-              <div className="pb-10">
-                <div>{/*icon center*/}</div>
-                <p className="font-normal pl-10">No 233 Main St. New York,</p>
-                <p className="font-normal pl-10">United States</p>
+              <div className="pb-10 flex">
+                <div>
+                  <img src="src/assets/Home5.svg" alt="icon5"/>
+                </div>
+                <div>
+                  <p className="font-normal pl-5">No 233 Main St. New York,</p>
+                  <p className="font-normal pl-5">United States</p>
+                </div>
               </div>
               <button className="pl-5 h-15 w-40 bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hover:text-gray-300 hover:font-bold hover:rounded hover:bg-gray-800 hover-pr-2 hover-pl-2 font-bold pt-2 pb-2 uppercase">register</button>
             </section>
