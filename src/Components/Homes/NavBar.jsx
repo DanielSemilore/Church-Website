@@ -8,10 +8,10 @@ const NavBar = () => {
             <span className="text-40px text-2xl font-bold pl-10 pr-10 pt-2.5 pb-2.5 h-15 pr-4 border-r-1">Finsweet</span>
             <div className="text-1xl uppercase font-small pl-20 text-16px">
                 <nav>
-                    <Link to ="/home" className="hover:font-bold hover:text-2xl hover:text-gray-300 pr-2 pl-2 hover:rounded hover:bg-gray-800">Home</Link>
-                    <Link target="_blank" to ="/about" className="hover:font-bold hover:text-2xl hover:text-gray-300 pr-2 pl-2 hover:rounded hover:bg-gray-800">About us</Link>
-                    <Link target="_blank" to ="/blog" className="hover:font-bold hover:text-2xl hover:text-gray-300 pr-2 pl-2 rounded hover:bg-gray-800">Blog</Link>
-                    <Link target="_blank" to ="/sermons" className="hover:font-bold hover:text-2xl hover:text-gray-300 pr-2 pl-2 rounded hover:bg-gray-800">Sermons</Link>
+                    <Link to ="/home" className="active:text-italian visited:text-red-500 hover:font-bold hover:text-2xl hover:text-gray-300 pr-2 pl-2 hover:rounded hover:bg-gray-800">Home</Link>
+                    <Link target="_blank" to ="/about" className="active:italic visited:text-red-500 hover:font-bold hover:text-2xl hover:text-gray-300 pr-2 pl-2 hover:rounded hover:bg-gray-800">About us</Link>
+                    <Link target="_blank" to ="/blog" className="active:italic visited:text-red-500 hover:font-bold hover:text-2xl hover:text-gray-300 pr-2 pl-2 rounded hover:bg-gray-800">Blog</Link>
+                    <Link target="_blank" to ="/sermons" className="active:italic visited:text-red-500 hover:font-bold hover:text-2xl hover:text-gray-300 pr-2 pl-2 rounded hover:bg-gray-800">Sermons</Link>
                 </nav>
             </div>
             <div className="ml-auto pr-15">

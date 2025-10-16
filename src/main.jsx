@@ -21,6 +21,7 @@ import Footer from "./Components/Homes/Footer";
 import Head from "./Components/About/Head";
 import SUB_HEADER1 from "./Components/About/SUB_HEADER1";
 import Sermon_Header from "./Components/Sermon/Sermon_Header";
+import SUB_HEADER2 from "./Components/About/SUB_HEADER2";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -44,6 +45,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/About-head" element={<Head />} />
       <Route path="/About-subhead1" element={<SUB_HEADER1 />} />
       <Route path="/Sermon-subhead1" element={<Sermon_Header />} />
+      <Route path="/About-subhead2" element={<SUB_HEADER2 />} />
     </Routes>
   </BrowserRouter>
 );
