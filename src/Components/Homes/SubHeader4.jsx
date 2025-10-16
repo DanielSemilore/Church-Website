@@ -3,7 +3,7 @@ import { Link, Links } from 'react-router-dom'
 
 const SubHeader4 = () => {
   return (
-    <div className="block justify-center h-screen w-full text-black mt-150">
+    <div className="block justify-center h-screen w-full text-black">
       <div className="text-center pt-25">
         <p className="text-xs uppercase pb-5">upcoming sermons</p>
         <h1 className="font-bold uppercase text-4xl">join us and become part</h1>
