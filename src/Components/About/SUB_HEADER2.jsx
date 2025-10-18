@@ -10,7 +10,7 @@ const SUB_HEADER2 = () => {
           <h2 className="uppercase font-bold text-4xl">joining our church</h2>
           <div className="pt-15 text-center">
             <div className="flex justify-around">
-              <div className="text-left"> 
+              <div className="text-left pt-10"> 
                 <h3 className="text-2xl font-bold uppercase">Find fulfillment and joy</h3>
                 <div className="pt-5 text-left">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore</p>
@@ -27,8 +27,8 @@ const SUB_HEADER2 = () => {
               <div className="">
                 <img src="src/assets/About2.png" alt="image2" className="h-64 w-94" />
               </div>
-              <div className="text-left"> 
-                <h3 className="text-2xl font-bold uppercase">Find fulfillment and joy</h3>
+              <div className="text-left pt-10"> 
+                <h3 className="text-2xl font-bold uppercase">shared values</h3>
                 <div className="pt-5 text-left">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore</p>
                   <p>suscipit est quidem odit aliquid incidunt, dignissimos debitis officiis dicta!,Explicabo assumenda officia,</p>
@@ -38,8 +38,8 @@ const SUB_HEADER2 = () => {
               </div>
             </div>
             <div className="flex justify-around pt-15">
-              <div className="text-left"> 
-                <h3 className="text-2xl font-bold uppercase">Find fulfillment and joy</h3>
+              <div className="text-left pt-10"> 
+                <h3 className="text-2xl font-bold uppercase">charity events</h3>
                 <div className="pt-5 text-left">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore</p>
                   <p>suscipit est quidem odit aliquid incidunt, dignissimos debitis officiis dicta!,Explicabo assumenda officia,</p>
@@ -55,8 +55,8 @@ const SUB_HEADER2 = () => {
               <div className="">
                 <img src="src/assets/About4.png" alt="image4" className="h-64 w-94" />
               </div>  
-              <div className="text-left"> 
-                <h3 className="text-2xl font-bold uppercase">Find fulfillment and joy</h3>
+              <div className="text-left pt-10"> 
+                <h3 className="text-2xl font-bold uppercase">all are welcome</h3>
                 <div className="pt-5 text-left">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore</p>
                   <p>suscipit est quidem odit aliquid incidunt, dignissimos debitis officiis dicta!,Explicabo assumenda officia,</p>

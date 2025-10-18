@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sub_Header1 = () => {
   return (
-        <div className="block justify-center h-screen w-full text-black pt-35">
+        <div className="block justify-center h-screen w-full text-black mb-65 pt-35">
       <div className="pt-25">
         <p className="text-xs uppercase pl-140">read our blog</p>
         <div className="item-center pt-5">
