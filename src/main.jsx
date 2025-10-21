@@ -23,6 +23,8 @@ import SUB_HEADER1 from "./Components/About/SUB_HEADER1";
 import Sermon_Header from "./Components/Sermon/Sermon_Header";
 import SUB_HEADER2 from "./Components/About/SUB_HEADER2";
 import SUB_HEADER3 from "./Components/About/SUB_HEADER3";
+import Blog_subheader1 from "./Components/Blog/Blog_subheader1";
+import Blog_subheader2 from "./Components/Blog/Blog_subheader2";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -48,6 +50,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/Sermon-subhead1" element={<Sermon_Header />} />
       <Route path="/About-subhead2" element={<SUB_HEADER2 />} />
       <Route path="/About-subhead3" element={<SUB_HEADER3 />} />
+      <Route path="/Blog-subhead1" element={<Blog_subheader1 />} />
+      <Route path="/Blog-subhead2" element={<Blog_subheader2 />} />
     </Routes>
   </BrowserRouter>
 );
