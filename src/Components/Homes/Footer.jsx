@@ -12,12 +12,26 @@ const Footer = () => {
           <p className="text-sm font-light pt-5">4517 washington ave.</p>
           <p className="text-sm font-light pt-5">finsweet@example.com</p>
         </div>
-        <div className="text-left pl-25 pr-15 uppercase">
+        <div className="text-left pl-25 pr-15 uppercase block">
           <h4 className="font-semibold">quicklinks</h4>
-          <p className="text-sm font-light pt-5">about us</p>
-          <p className="text-sm font-light pt-5">sermons</p>
-          <p className="text-sm font-light pt-5">events</p>
-          <p className="text-sm font-light pt-5">blog</p>
+          <div className="pt-5">
+            <Link target="_blank" to ="/home" className="text-sm font-light active:text-italian visited:text-red-500 hover:font-bold hover:text-2xl hover:text-gray-300 hover:rounded hover:bg-gray-800">home</Link>
+          </div>
+          <div className="pt-2">
+            <Link target="_blank" to ="/about" className="text-sm font-light active:text-italian visited:text-red-500 hover:font-bold hover:text-2xl hover:text-gray-300 hover:rounded hover:bg-gray-800">about us</Link>
+          </div> 
+          <div className="pt-2"> 
+            <Link target="_blank" to ="/sermons" className="text-sm font-light active:text-italian visited:text-red-500 hover:font-bold hover:text-2xl hover:text-gray-300 hover:rounded hover:bg-gray-800">sermons</Link>
+          </div>
+          <div className="pt-2">  
+            <Link target="_blank" to ="/events" className="text-sm font-light active:text-italian visited:text-red-500 hover:font-bold hover:text-2xl hover:text-gray-300 hover:rounded hover:bg-gray-800">events</Link>
+          </div>
+          <div className="pt-2">
+            <Link target="_blank" to ="/blog" className="text-sm font-light active:text-italian visited:text-red-500 hover:font-bold hover:text-2xl hover:text-gray-300 hover:rounded hover:bg-gray-800">blog</Link>
+          </div>
+          <div className="pt-2">
+            <Link target="_blank" to ="/post" className="text-sm font-light active:text-italian visited:text-red-500 hover:font-bold hover:text-2xl hover:text-gray-300 hover:rounded hover:bg-gray-800">post</Link>
+          </div>
         </div>
         <div className="text-left pr-15">
           <h3 className="font-semibold">connect</h3>

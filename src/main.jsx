@@ -25,6 +25,11 @@ import SUB_HEADER2 from "./Components/About/SUB_HEADER2";
 import SUB_HEADER3 from "./Components/About/SUB_HEADER3";
 import Blog_subheader1 from "./Components/Blog/Blog_subheader1";
 import Blog_subheader2 from "./Components/Blog/Blog_subheader2";
+import Post_Header from "./Components/Blog-Post/Post_Header";
+import Post_subheader1 from "./Components/Blog-Post/Post_subheader1";
+import Post_subheader2 from "./Components/Blog-Post/Post_subheader2";
+import Event_subheader1 from "./Components/Sermon-Event/Event_subheader1";
+import Event_subheader2 from "./Components/Sermon-Event/Event_subheader2";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -52,6 +57,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/About-subhead3" element={<SUB_HEADER3 />} />
       <Route path="/Blog-subhead1" element={<Blog_subheader1 />} />
       <Route path="/Blog-subhead2" element={<Blog_subheader2 />} />
+      <Route path="/Post-header" element={<Post_Header />} />
+      <Route path="/Post-subhead1" element={<Post_subheader1 />} />
+      <Route path="/Post-subhead2" element={<Post_subheader2/>} />
+      <Route path="/Eventt-subhead1" element={<Event_subheader1/>} />
+      <Route path="/Event-subhead2" element={<Event_subheader2/>} />
     </Routes>
   </BrowserRouter>
 );

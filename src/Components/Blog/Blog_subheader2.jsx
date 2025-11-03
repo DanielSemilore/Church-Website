@@ -2,11 +2,10 @@ import React from 'react'
 
 const Blog_subheader2 = () => {
   return (
-    <div className="block justify-center h-screen w-full text-black mb-100">
+    <div className="block justify-center h-auto w-full text-black bg-gray-100">
       <div className="pt-25">
-        <p className="text-xs uppercase pl-140">read our blog</p>
         <div className="item-center pt-5">
-          <h2 className="uppercase font-bold text-4xl pl-85">share, inspire, innovate</h2>
+          <h2 className="uppercase font-bold text-4xl text-center">all blog posts</h2>
           <div className="flex justify-around pt-20 text-left">
             <div className="bg-amber-200 h-90 w-70 mr-5 ml-1">
               <p className="text-xs font-semibold pl-5 pt-15 uppercase text-amber-600">relationship</p>
@@ -54,7 +53,7 @@ const Blog_subheader2 = () => {
               <p className="pl-5 font-semibold uppercase text-xs pt-2">Tuesday 13 May,2021</p>
             </div>
           </div>
-          <div className="flex justify-around pt-5 text-left mr-85 ml-3">
+          <div className="flex justify-around pt-5 text-left mr-85 ml-3 pb-40">
             <div className="bg-amber-200 h-90 w-70 mr-5 ml-1">
               <p className="text-xs font-semibold pl-5 pt-15 uppercase text-amber-600">relationship</p>
               <h3 className="font-bold text-2xl pl-5 pt-5 uppercase">WHAT IT MEANS TO</h3>

@@ -1,14 +1,11 @@
 import React from 'react'
 
-const Sub_Header1 = () => {
+const Event_subheader2 = () => {
   return (
-    <div className="block justify-center h-screen w-full text-black mb-65 pt-35">
-      <div className="pt-25">
-        <p className="text-xs uppercase pl-140">read our blog</p>
-        <div className="item-center pt-5">
-          <h2 className="uppercase font-bold text-4xl pl-85">share, inspire, innovate</h2>
+    <div className="block justify-center h-auto bg-gray-200 w-full item-center text-black pb-65 pt-35">
+        <h2 className="uppercase font-bold text-4xl text-center">upcoming sermons</h2>
           <div className="flex justify-around pt-20 text-left">
-            <div className="bg-amber-200 h-100 w-70 mr-5 ml-1">
+            <div className="bg-white h-100 w-70 mr-5 ml-1">
               <h3 className="font-bold uppercase text-3xl pt-5 pl-61">20</h3>
               <div className="flex pb-3">
                 <p className="uppercase pl-60">july</p>
@@ -38,7 +35,7 @@ const Sub_Header1 = () => {
               </div>
               <div className="bg-amber-300 h-3 w-70 mt-10"></div>
             </div>
-            <div className="bg-amber-200 h-100 w-70 mr-5 ml-1">
+            <div className="bg-white h-100 w-70 mr-5 ml-1">
               <h3 className="font-bold uppercase text-3xl pt-5 pl-61">20</h3>
               <div className="flex pb-3">
                 <p className="uppercase pl-60">july</p>
@@ -67,7 +64,7 @@ const Sub_Header1 = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-amber-200 h-100 w-70 mr-5 ml-1">
+            <div className="bg-white h-100 w-70 mr-5 ml-1">
               <h3 className="font-bold uppercase text-3xl pt-5 pl-61">20</h3>
               <div className="flex pb-3">
                 <p className="uppercase pl-60">july</p>
@@ -96,14 +93,14 @@ const Sub_Header1 = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-amber-200 h-100 w-70 mr-5 ml-1">
+            <div className="bg-white h-100 w-70 mr-5 ml-1">
               <h3 className="font-bold uppercase text-3xl pt-5 pl-61">20</h3>
               <div className="flex pb-3">
                 <p className="uppercase pl-60">july</p>
               </div>  
               <p className="font-semibold text-amber-600 text-xs pl-5 pb-5 uppercase">upcoming event</p>
-              <h3 className="font-bold text-2xl pl-5 uppercase">watch and listen</h3>
-              <h3 className="font-bold text-2xl pl-5 uppercase">to our sermons</h3>
+              <h3 className="font-bold text-2xl pl-5 uppercase">celebrating</h3>
+              <h3 className="font-bold text-2xl pl-5 uppercase">freedom and life</h3>
               <p className="pt-5 pl-5 font-semibold text-xs">Lorem ipsum dolor sit amet,</p>
               <p className="pl-5 font-semibold text-xs">consectetur adipiscing elit,</p>
               <div className="flex font-semibold text-xs pt-8">
@@ -127,9 +124,7 @@ const Sub_Header1 = () => {
             </div>
           </div>
         </div>  
-      </div>
-    </div>
   )
 }
 
-export default Sub_Header1
+export default Event_subheader2
