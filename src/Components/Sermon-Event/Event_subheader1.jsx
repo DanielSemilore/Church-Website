@@ -24,32 +24,34 @@ const Event_subheader1 = () => {
               <p className="text-sm">et dolore magna aliqua. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Pharetra sit</p>
               <p className="text-sm">amet aliquam id diam maecenas ultricies.</p>
             </div>
-            <div className="ml-5 w-400 bg-white h-130 text-left item-left pl-10 mr-5">
-                <h1 className=" uppercase font-bold text-2xl pt-10 pb-5">register now</h1>
+            <div className="rounded-md ml-5 w-400 bg-white h-130 text-left item-left pl-10 mr-5">
+              <h1 className=" uppercase font-bold text-2xl pt-10 pb-5">register now</h1>
+              <div className="flex">
                 <div className="flex">
-                    <div className="flex">
-                        <img src="src/assets/Home5.svg" alt="event-icon1" className="mr-2"/>
-                        <p className="text-xs">
-                            No 233 Main St. New York,
-                            <br />
-                            <span className="mt-2">United States.</span>
-                        </p>
-                    </div>
-                    <div className="flex ml-10">
-                        <img src="src/assets/Home4.svg" alt="event-icon2" className="mr-2" />
-                        <p className="text-xs w-25">13 May, 2018</p>
-                    </div>
+                  <img src="src/assets/Home5.svg" alt="event-icon1" className="mr-2"/>
+                  <p className="text-xs">
+                    No 233 Main St. New York,
+                    <br />
+                    <span className="mt-2">
+                      United States.
+                    </span>
+                  </p>
                 </div>
-                <br />
-                <p className="font-bold text-lg pb-2">Full Name:</p>
-                <input type="text" className="border-b border-gray-300 p-2 mb-5 w-80 font-bold text-black text-2xl" placeholder="leonard john" />
-                <br />
-                <p className="font-bold text-lg pb-2">Email:</p>
-                <input type="text" className="border-b border-gray-300 p-2 w-80 font-bold text-black text-2xl" placeholder="admin@abc.com" />
-                <br />
-                <button className="bg-orange-200 w-20 h-10 mt-10 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded hover:text-gray-300 hover:font-bold hover:rounded hover:bg-gray-800 hover-pr-2 hover-pl-2">
-                    <Link target="_blank" to="*" className="uppercase text-center">register</Link>
-                </button>
+                <div className="flex ml-10">
+                  <img src="src/assets/Home4.svg" alt="event-icon2" className="mr-2" />
+                  <p className="text-xs w-25">13 May, 2018</p>
+                </div>
+              </div>
+              <br />
+              <p className="font-bold text-lg pb-2">Full Name:</p>
+              <input type="text" className="border-b border-gray-300 p-2 mb-5 w-80 font-bold text-black text-2xl" placeholder="leonard john" />
+              <br />
+              <p className="font-bold text-lg pb-2">Email:</p>
+              <input type="text" className="border-b border-gray-300 p-2 w-80 font-bold text-black text-2xl" placeholder="admin@abc.com" />
+              <br />
+              <button className="bg-orange-200 mt-10 hover:bg-blue-700 h-15 text-black font-bold py-2 px-4 rounded hover:text-gray-300 hover:font-bold hover:rounded hover:bg-gray-800 hover-pr-2 hover-pl-2">
+                <Link target="_blank" to="*" className="pl-10 pr-10 uppercase text-center">register</Link>
+              </button>
             </div>
         </div>
     </div>

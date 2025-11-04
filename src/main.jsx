@@ -30,6 +30,8 @@ import Post_subheader1 from "./Components/Blog-Post/Post_subheader1";
 import Post_subheader2 from "./Components/Blog-Post/Post_subheader2";
 import Event_subheader1 from "./Components/Sermon-Event/Event_subheader1";
 import Event_subheader2 from "./Components/Sermon-Event/Event_subheader2";
+import Contact_Header from "./Components/Contact/Contact_Header";
+import Contact_subheader from "./Components/Contact/Contact_subheader";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -62,6 +64,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/Post-subhead2" element={<Post_subheader2/>} />
       <Route path="/Eventt-subhead1" element={<Event_subheader1/>} />
       <Route path="/Event-subhead2" element={<Event_subheader2/>} />
+      <Route path="/Contact-header" element={<Contact_Header/>} />
+      <Route path="/Contact-subheader" element={<Contact_subheader/>} />
     </Routes>
   </BrowserRouter>
 );

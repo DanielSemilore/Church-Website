@@ -3,7 +3,7 @@ import { Link, Links } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className="block justify-center h-70 w-full bg-black text-white">
+    <div className="block justify-center h-80 w-full bg-black text-white">
       <div className="pt-10 flex">
         <div className="text-left pl-25 pr-25 uppercase">
           <h3 className="font-semibold text-3xl text-amber-300 pb-5">Finsweet</h3>
@@ -19,6 +19,9 @@ const Footer = () => {
           </div>
           <div className="pt-2">
             <Link target="_blank" to ="/about" className="text-sm font-light active:text-italian visited:text-red-500 hover:font-bold hover:text-2xl hover:text-gray-300 hover:rounded hover:bg-gray-800">about us</Link>
+          </div>
+          <div className="pt-2">
+            <Link target="_blank" to ="/contact" className="text-sm font-light active:text-italian visited:text-red-500 hover:font-bold hover:text-2xl hover:text-gray-300 hover:rounded hover:bg-gray-800">contact us</Link>
           </div> 
           <div className="pt-2"> 
             <Link target="_blank" to ="/sermons" className="text-sm font-light active:text-italian visited:text-red-500 hover:font-bold hover:text-2xl hover:text-gray-300 hover:rounded hover:bg-gray-800">sermons</Link>
