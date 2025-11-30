@@ -1,129 +1,69 @@
 import React from 'react'
 
 const Event_subheader2 = () => {
+  const cards = [
+    {
+      titleLines: ['100 random acts', 'of kindness'],
+      tag: 'upcoming event'
+    },
+    {
+      titleLines: ['faith is a process,', 'not a destination'],
+      tag: 'upcoming event'
+    },
+    {
+      titleLines: ['there is nothing', 'impossible'],
+      tag: 'upcoming event'
+    },
+    {
+      titleLines: ['celebrating', 'freedom and life'],
+      tag: 'upcoming event'
+    }
+  ]
+
   return (
-    <div className="block justify-center h-auto bg-gray-200 w-full item-center text-black pb-65 pt-35">
-        <h2 className="uppercase font-bold text-4xl text-center">upcoming sermons</h2>
-          <div className="flex justify-around pt-20 text-left">
-            <div className="bg-white h-100 w-70 mr-5 ml-1">
-              <h3 className="font-bold uppercase text-3xl pt-5 pl-61">20</h3>
-              <div className="flex pb-3">
-                <p className="uppercase pl-60">july</p>
-              </div>  
-              <p className="font-semibold text-amber-600 text-xs pl-5 pb-5 uppercase">upcoming event</p>
-              <h3 className="font-bold text-2xl pl-5 uppercase">100 random acts</h3>
-              <h3 className="font-bold text-2xl pl-5 uppercase">of kindness</h3>
-              <p className="pt-5 pl-5 font-semibold text-xs">Lorem ipsum dolor sit amet,</p>
-              <p className="pl-5 font-semibold text-xs">consectetur adipiscing elit,</p>
-              <div className="flex font-semibold text-xs pt-8">
-                <div className="pl-5">
-                  <img src="src/assets/Home4.svg" alt="icon4" />
-                </div>  
-                <div className="pl-5">
-                  <p className="">Friday 23:39 IST</p>
-                  <p className="">Saturday 11:20 ISD</p>
-                </div>
-              </div>  
-              <div className="flex font-semibold text-xs pt-3">
-                <div className="pl-5">
-                  <img src="src/assets/Home5.svg" alt="icon5" />
-                </div>  
-                <div className="pl-5">
-                  <p className="">No 233 Main St. New York,</p>
-                  <p className="">United States.</p>
+    <section className="w-full bg-gray-200 text-black py-12">
+      <div className="container mx-auto px-4">
+        <h2 className="uppercase font-bold text-2xl sm:text-3xl md:text-4xl text-center">upcoming sermons</h2>
+
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {cards.map((card, idx) => (
+            <article key={idx} className="bg-white rounded-lg p-4 flex flex-col h-full">
+              <div className="flex items-baseline justify-between">
+                <h3 className="font-bold uppercase text-3xl">20</h3>
+                <p className="uppercase text-sm">july</p>
+              </div>
+              <p className="font-semibold text-amber-600 text-xs mt-2 uppercase">{card.tag}</p>
+              <div className="mt-2">
+                <h3 className="font-bold text-lg uppercase">{card.titleLines[0]}</h3>
+                <h3 className="font-bold text-lg uppercase">{card.titleLines[1]}</h3>
+              </div>
+              <div className="mt-3 text-xs font-semibold flex-1">
+                <p>Lorem ipsum dolor sit amet,</p>
+                <p>consectetur adipiscing elit,</p>
+              </div>
+
+              <div className="mt-4 flex items-center gap-3 text-xs font-semibold">
+                <img src="src/assets/Home4.svg" alt="icon4" className="w-5 h-5" />
+                <div>
+                  <p>Friday 23:39 IST</p>
+                  <p>Saturday 11:20 ISD</p>
                 </div>
               </div>
-              <div className="bg-amber-300 h-3 w-70 mt-10"></div>
-            </div>
-            <div className="bg-white h-100 w-70 mr-5 ml-1">
-              <h3 className="font-bold uppercase text-3xl pt-5 pl-61">20</h3>
-              <div className="flex pb-3">
-                <p className="uppercase pl-60">july</p>
-              </div>  
-              <p className="font-semibold text-amber-600 text-xs pl-5 pb-5 uppercase">upcoming event</p>
-              <h3 className="font-bold text-2xl pl-5 uppercase">faith is a process,</h3>
-              <h3 className="font-bold text-2xl pl-5 uppercase">not a destination</h3>
-              <p className="pt-5 pl-5 font-semibold text-xs">Lorem ipsum dolor sit amet,</p>
-              <p className="pl-5 font-semibold text-xs">consectetur adipiscing elit,</p>
-              <div className="flex font-semibold text-xs pt-8">
-                <div className="pl-5">
-                  <img src="src/assets/Home4.svg" alt="icon4" />
-                </div>  
-                <div className="pl-5">
-                  <p className="">Friday 23:39 IST</p>
-                  <p className="">Saturday 11:20 ISD</p>
-                </div>
-              </div>  
-              <div className="flex font-semibold text-xs pt-3">
-                <div className="pl-5">
-                  <img src="src/assets/Home5.svg" alt="icon5" />
-                </div>  
-                <div className="pl-5">
-                  <p className="">No 233 Main St. New York,</p>
-                  <p className="">United States.</p>
+
+              <div className="mt-3 flex items-center gap-3 text-xs font-semibold">
+                <img src="src/assets/Home5.svg" alt="icon5" className="w-5 h-5" />
+                <div>
+                  <p>No 233 Main St. New York,</p>
+                  <p>United States.</p>
                 </div>
               </div>
-            </div>
-            <div className="bg-white h-100 w-70 mr-5 ml-1">
-              <h3 className="font-bold uppercase text-3xl pt-5 pl-61">20</h3>
-              <div className="flex pb-3">
-                <p className="uppercase pl-60">july</p>
-              </div>  
-              <p className="font-semibold text-amber-600 text-xs pl-5 pb-5 uppercase">upcoming event</p>
-              <h3 className="font-bold text-2xl pl-5 uppercase">there is nothing</h3>
-              <h3 className="font-bold text-2xl pl-5 uppercase">impossible</h3>
-              <p className="pt-5 pl-5 font-semibold text-xs">Lorem ipsum dolor sit amet,</p>
-              <p className="pl-5 font-semibold text-xs">consectetur adipiscing elit,</p>
-              <div className="flex font-semibold text-xs pt-8">
-                <div className="pl-5">
-                  <img src="src/assets/Home4.svg" alt="icon4" />
-                </div>  
-                <div className="pl-5">
-                  <p className="">Friday 23:39 IST</p>
-                  <p className="">Saturday 11:20 ISD</p>
-                </div>
-              </div>  
-              <div className="flex font-semibold text-xs pt-3">
-                <div className="pl-5">
-                  <img src="src/assets/Home5.svg" alt="icon5" />
-                </div>  
-                <div className="pl-5">
-                  <p className="">No 233 Main St. New York,</p>
-                  <p className="">United States.</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white h-100 w-70 mr-5 ml-1">
-              <h3 className="font-bold uppercase text-3xl pt-5 pl-61">20</h3>
-              <div className="flex pb-3">
-                <p className="uppercase pl-60">july</p>
-              </div>  
-              <p className="font-semibold text-amber-600 text-xs pl-5 pb-5 uppercase">upcoming event</p>
-              <h3 className="font-bold text-2xl pl-5 uppercase">celebrating</h3>
-              <h3 className="font-bold text-2xl pl-5 uppercase">freedom and life</h3>
-              <p className="pt-5 pl-5 font-semibold text-xs">Lorem ipsum dolor sit amet,</p>
-              <p className="pl-5 font-semibold text-xs">consectetur adipiscing elit,</p>
-              <div className="flex font-semibold text-xs pt-8">
-                <div className="pl-5">
-                  <img src="src/assets/Home4.svg" alt="icon4" />
-                </div>  
-                <div className="pl-5">
-                  <p className="">Friday 23:39 IST</p>
-                  <p className="">Saturday 11:20 ISD</p>
-                </div>
-              </div>  
-              <div className="flex font-semibold text-xs pt-3">
-                <div className="pl-5">
-                  <img src="src/assets/Home5.svg" alt="icon5" />
-                </div>  
-                <div className="pl-5">
-                  <p className="">No 233 Main St. New York,</p>
-                  <p className="">United States.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>  
+
+              <div className="bg-amber-300 h-2 w-16 mt-4 rounded"></div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 

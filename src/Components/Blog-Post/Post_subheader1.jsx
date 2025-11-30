@@ -2,11 +2,11 @@ import React from 'react'
 
 const Post_subheader1 = () => {
   return (
-    <div className="flex item-center justify-center h-auto w-full">
-      <div className="pt-15 text-center">
-        <img src="src/assets/post1.png" alt="image1" className="w-300 h-120" /> 
+    <section className="w-full py-8">
+      <div className="container mx-auto px-4 text-center">
+        <img src="src/assets/post1.png" alt="post image" className="w-full max-w-2xl h-auto mx-auto rounded" />
       </div>
-    </div>
+    </section>
   )
 }
 

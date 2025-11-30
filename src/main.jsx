@@ -36,36 +36,36 @@ import Contact_subheader from "./Components/Contact/Contact_subheader";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} /> 
-      <Route path="/home" element={<Header />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<div>404 Not Found</div>} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/post" element={<Post />} />
-      <Route path="/events" element={<Event />} />
-      <Route path="/sermons" element={<Sermon />} />
-      <Route path="/SubHeader1" element={<SubHeader1 />} />
-      <Route path="/SubHeader2" element={<SubHeader2 />} />
-      <Route path="/SubHeader3" element={<SubHeader3 />} />
-      <Route path="/SubHeader4" element={<SubHeader4 />} />
-      <Route path="/SubHeader5" element={<SubHeader5 />} />
-      <Route path="/SubHeader6" element={<SubHeader6 />} />
-      <Route path="/Footer" element={<Footer />} />
-      <Route path="/About-head" element={<Head />} />
-      <Route path="/About-subhead1" element={<SUB_HEADER1 />} />
-      <Route path="/Sermon-subhead1" element={<Sermon_Header />} />
-      <Route path="/About-subhead2" element={<SUB_HEADER2 />} />
-      <Route path="/About-subhead3" element={<SUB_HEADER3 />} />
-      <Route path="/Blog-subhead1" element={<Blog_subheader1 />} />
-      <Route path="/Blog-subhead2" element={<Blog_subheader2 />} />
-      <Route path="/Post-header" element={<Post_Header />} />
-      <Route path="/Post-subhead1" element={<Post_subheader1 />} />
-      <Route path="/Post-subhead2" element={<Post_subheader2/>} />
-      <Route path="/Eventt-subhead1" element={<Event_subheader1/>} />
-      <Route path="/Event-subhead2" element={<Event_subheader2/>} />
-      <Route path="/Contact-header" element={<Contact_Header/>} />
-      <Route path="/Contact-subheader" element={<Contact_subheader/>} />
+        <Route path="/" element={<App />} /> 
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<div>404 Not Found</div>} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/post" element={<Post />} />
+        <Route path="/events" element={<Event />} />
+        <Route path="/sermons" element={<Sermon />} />
+        <Route path="/SubHeader1" element={<SubHeader1 />} />
+        <Route path="/SubHeader2" element={<SubHeader2 />} />
+        <Route path="/SubHeader3" element={<SubHeader3 />} />
+        <Route path="/SubHeader4" element={<SubHeader4 />} />
+        <Route path="/SubHeader5" element={<SubHeader5 />} />
+        <Route path="/SubHeader6" element={<SubHeader6 />} />
+        <Route path="/Footer" element={<Footer />} />
+        <Route path="/About-head" element={<Head />} />
+        <Route path="/About-subhead1" element={<SUB_HEADER1 />} />
+        <Route path="/Sermon-subhead1" element={<Sermon_Header />} />
+        <Route path="/About-subhead2" element={<SUB_HEADER2 />} />
+        <Route path="/About-subhead3" element={<SUB_HEADER3 />} />
+        <Route path="/Blog-subhead1" element={<Blog_subheader1 />} />
+        <Route path="/Blog-subhead2" element={<Blog_subheader2 />} />
+        <Route path="/Post-header" element={<Post_Header />} />
+        <Route path="/Post-subhead1" element={<Post_subheader1 />} />
+        <Route path="/Post-subhead2" element={<Post_subheader2/>} />
+        <Route path="/Eventt-subhead1" element={<Event_subheader1/>} />
+        <Route path="/Event-subhead2" element={<Event_subheader2/>} />
+        <Route path="/Contact-header" element={<Contact_Header/>} />
+        <Route path="/Contact-subheader" element={<Contact_subheader/>} />
     </Routes>
   </BrowserRouter>
 );

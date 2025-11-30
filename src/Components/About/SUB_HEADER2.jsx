@@ -2,73 +2,78 @@ import React from 'react'
 
 const SUB_HEADER2 = () => {
   return (
-    <div className="block justify-center h-screen w-full text-black mb-150">
-      <div className="pt-25 item-center text-center">
-        <p className="text-xs uppercase">benefits</p>
-        <div className="item-center pt-5">
-          <h2 className="uppercase font-bold text-4xl">the benefits of</h2>
-          <h2 className="uppercase font-bold text-4xl">joining our church</h2>
-          <div className="pt-15 text-center">
-            <div className="flex justify-around">
-              <div className="text-left pt-10"> 
-                <h3 className="text-2xl font-bold uppercase">Find fulfillment and joy</h3>
-                <div className="pt-5 text-left">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore</p>
-                  <p>suscipit est quidem odit aliquid incidunt, dignissimos debitis officiis dicta!,Explicabo assumenda officia,</p>
-                  <p>asperiores error enim, dolore totam dignissimos sint velit, sed quasi, Molestiae,</p>
-                  <p>dicta? repellat ab minima expedita qui,Molestiae.</p>
-                </div>
-              </div>
-              <div className="">
-                <img src="src/assets/About1.png" alt="image1" className="h-64 w-94" />
-              </div>
-            </div>
-            <div className="flex justify-around pt-10">
-              <div className="">
-                <img src="src/assets/About2.png" alt="image2" className="h-64 w-94" />
-              </div>
-              <div className="text-left pt-10"> 
-                <h3 className="text-2xl font-bold uppercase">shared values</h3>
-                <div className="pt-5 text-left">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore</p>
-                  <p>suscipit est quidem odit aliquid incidunt, dignissimos debitis officiis dicta!,Explicabo assumenda officia,</p>
-                  <p>asperiores error enim, dolore totam dignissimos sint velit, sed quasi, Molestiae,</p>
-                  <p>dicta? repellat ab minima expedita qui,Molestiae.</p>
-                </div>
+    <section className="w-full text-black bg-white">
+      <div className="container mx-auto px-4 py-12">
+        <p className="text-xs uppercase text-center text-gray-600">benefits</p>
+
+        <div className="mt-4 text-center">
+          <h2 className="uppercase font-bold text-2xl sm:text-3xl">the benefits of</h2>
+          <h2 className="uppercase font-bold text-2xl sm:text-3xl">joining our church</h2>
+        </div>
+
+        <div className="mt-8 space-y-10">
+          {/* Row 1: text left, image right */}
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="md:w-1/2">
+              <h3 className="text-xl sm:text-2xl font-bold uppercase">Find fulfillment and joy</h3>
+              <div className="mt-3 text-sm sm:text-base text-gray-700 space-y-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore</p>
+                <p>suscipit est quidem odit aliquid incidunt, dignissimos debitis officiis dicta! Explicabo assumenda officia,</p>
+                <p>asperiores error enim, dolore totam dignissimos sint velit, sed quasi.</p>
               </div>
             </div>
-            <div className="flex justify-around pt-15">
-              <div className="text-left pt-10"> 
-                <h3 className="text-2xl font-bold uppercase">charity events</h3>
-                <div className="pt-5 text-left">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore</p>
-                  <p>suscipit est quidem odit aliquid incidunt, dignissimos debitis officiis dicta!,Explicabo assumenda officia,</p>
-                  <p>asperiores error enim, dolore totam dignissimos sint velit, sed quasi, Molestiae,</p>
-                  <p>dicta? repellat ab minima expedita qui,Molestiae.</p>
-                </div>
-              </div>
-              <div className="">
-                <img src="src/assets/About3.png" alt="image3" className="h-64 w-94" />
+            <div className="md:w-1/2">
+              <img src="src/assets/About1.png" alt="image1" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+            </div>
+          </div>
+
+          {/* Row 2: image left, text right */}
+          <div className="flex flex-col md:flex-row-reverse items-center gap-6">
+            <div className="md:w-1/2">
+              <h3 className="text-xl sm:text-2xl font-bold uppercase">shared values</h3>
+              <div className="mt-3 text-sm sm:text-base text-gray-700 space-y-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore</p>
+                <p>suscipit est quidem odit aliquid incidunt, dignissimos debitis officiis dicta! Explicabo assumenda officia,</p>
+                <p>asperiores error enim, dolore totam dignissimos sint velit, sed quasi.</p>
               </div>
             </div>
-            <div className="flex justify-around pt-15">
-              <div className="">
-                <img src="src/assets/About4.png" alt="image4" className="h-64 w-94" />
-              </div>  
-              <div className="text-left pt-10"> 
-                <h3 className="text-2xl font-bold uppercase">all are welcome</h3>
-                <div className="pt-5 text-left">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore</p>
-                  <p>suscipit est quidem odit aliquid incidunt, dignissimos debitis officiis dicta!,Explicabo assumenda officia,</p>
-                  <p>asperiores error enim, dolore totam dignissimos sint velit, sed quasi, Molestiae,</p>
-                  <p>dicta? repellat ab minima expedita qui,Molestiae.</p>
-                </div>
+            <div className="md:w-1/2">
+              <img src="src/assets/About2.png" alt="image2" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+            </div>
+          </div>
+
+          {/* Row 3: text left, image right */}
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="md:w-1/2">
+              <h3 className="text-xl sm:text-2xl font-bold uppercase">charity events</h3>
+              <div className="mt-3 text-sm sm:text-base text-gray-700 space-y-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore</p>
+                <p>suscipit est quidem odit aliquid incidunt, dignissimos debitis officiis dicta! Explicabo assumenda officia,</p>
+                <p>asperiores error enim, dolore totam dignissimos sint velit, sed quasi.</p>
               </div>
+            </div>
+            <div className="md:w-1/2">
+              <img src="src/assets/About3.png" alt="image3" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+            </div>
+          </div>
+
+          {/* Row 4: image left, text right */}
+          <div className="flex flex-col md:flex-row-reverse items-center gap-6">
+            <div className="md:w-1/2">
+              <h3 className="text-xl sm:text-2xl font-bold uppercase">all are welcome</h3>
+              <div className="mt-3 text-sm sm:text-base text-gray-700 space-y-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore</p>
+                <p>suscipit est quidem odit aliquid incidunt, dignissimos debitis officiis dicta! Explicabo assumenda officia,</p>
+                <p>asperiores error enim, dolore totam dignissimos sint velit, sed quasi.</p>
+              </div>
+            </div>
+            <div className="md:w-1/2">
+              <img src="src/assets/About4.png" alt="image4" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
             </div>
           </div>
         </div>
       </div>
-    </div>      
+    </section>
   )
 }
 

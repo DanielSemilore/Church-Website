@@ -1,50 +1,81 @@
 import React from 'react'
 
 const SubHeader1 = () => {
+  const cards = [
+    {
+      img: '/src/assets/Home1.svg',
+      title: 'About us',
+      lines: [
+        'Lorem ipsum dolor sit amet,',
+        'consectetur adipiscing elit,',
+        'sed do eiusmod tempor incididunt,',
+        'ut labore et dolore magna aliqua.'
+      ]
+    },
+    {
+      img: '/src/assets/Home2.svg',
+      title: 'Get involved',
+      lines: [
+        'Lorem ipsum dolor sit amet,',
+        'consectetur adipiscing elit,',
+        'sed do eiusmod tempor incididunt,',
+        'ut labore et dolore magna aliqua.'
+      ]
+    },
+    {
+      img: '/src/assets/Home3.svg',
+      title: 'Giving back',
+      lines: [
+        'Lorem ipsum dolor sit amet,',
+        'consectetur adipiscing elit,',
+        'sed do eiusmod tempor incididunt,',
+        'ut labore et dolore magna aliqua.'
+      ]
+    }
+  ]
+
   return (
-    <div className="flex justify-center h-screen w-full text-black bg-amber-100">
-      <div className="pt-25">
-        <p className="text-xs uppercase pl-148">Sub+Headline</p>
-        <div className="item-center pt-5">
-          <h2 className="uppercase font-bold text-4xl pl-85">A church that's relevant</h2>
-          <div className="flex justify-around pt-20 uppercase text-left">
-            <div className="bg-amber-200 h-90 w-100 mr-5 ml-1">
-              <div className="pt-25 pl-10">
-                <img src="src/assets/Home1.svg" alt="icon1"/>
+    <section aria-labelledby="subheader1-heading" className="bg-amber-100 text-black">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <p className="text-xs uppercase mb-3">Sub+Headline</p>
+
+        <h2
+          id="subheader1-heading"
+          className="uppercase font-bold mb-8 leading-tight"
+          style={{ fontSize: 'clamp(1.5rem, 3.8vw, 2.75rem)' }}
+        >
+          A church that's relevant
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {cards.map((c, idx) => (
+            <article
+              key={idx}
+              className="bg-amber-200 rounded-lg p-6 flex flex-col h-full"
+            >
+              <div className="flex items-start gap-4">
+                <img
+                  src={c.img}
+                  alt={c.title}
+                  className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain"
+                />
+                <h3 className="font-bold text-lg sm:text-xl">{c.title}</h3>
               </div>
-              <h3 className="font-bold text-3xl pl-10 pt-5">About us</h3>
-              <p className="pt-5 pl-10 font-semibold text-xs">Lorem ipsum dolor sit amet,</p>
-              <p className="pl-10 font-semibold text-xs">consectetur adipiscing elit,</p>
-              <p className="pl-10 font-semibold text-xs">sed do eiusmod tempor incididunt,</p>
-              <p className="pl-10 font-semibold text-xs">ut labore et dolore magna aliqua.</p>
-              <div className="bg-amber-300 h-3 w-100 mt-15"></div>
-            </div>
-            <div className="bg-amber-200 h-90 w-100 mr-5">
-              <div className="pt-25 pl-10">
-                <img src="src/assets/Home2.svg" alt="icon2"/>
+
+              <div className="mt-4 text-xs sm:text-sm text-gray-800 space-y-1 flex-1">
+                {c.lines.map((line, i) => (
+                  <p key={i}>{line}</p>
+                ))}
               </div>
-              <h3 className="font-bold text-3xl pl-10 pt-5">Get involved</h3>
-              <p className="pt-5 font-semibold pl-10 text-xs">Lorem ipsum dolor sit amet,</p>
-              <p className="font-semibold pl-10 text-xs">consectetur adipiscing elit,</p>
-              <p className="font-semibold pl-10 text-xs">sed do eiusmod tempor incididunt,</p>
-              <p className="font-semibold pl-10 text-xs">ut labore et dolore magna aliqua.</p>
-              <div className="bg-amber-300 h-3 w-100 mt-15"></div>
-            </div>
-            <div className="bg-amber-200 h-90 w-100 mr-5">
-              <div className="pt-25 pl-10">
-                  <img src="src/assets/Home3.svg" alt="icon3"/>
+
+              <div className="mt-6">
+                <div className="h-1 bg-amber-300 rounded w-full" />
               </div>
-              <h3 className="font-bold text-3xl pl-10 pt-5">Giving back</h3>
-              <p className="pt-5 font-semibold pl-10 text-xs">Lorem ipsum dolor sit amet,</p>
-              <p className="font-semibold pl-10 text-xs">consectetur adipiscing elit,</p>
-              <p className="font-semibold pl-10 text-xs">sed do eiusmod tempor incididunt,</p>
-              <p className="font-semibold pl-10 text-xs">ut labore et dolore magna aliqua.</p>
-              <div className="bg-amber-300 h-3 w-100 mt-15"></div>
-            </div>
-          </div>
-        </div>  
+            </article>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

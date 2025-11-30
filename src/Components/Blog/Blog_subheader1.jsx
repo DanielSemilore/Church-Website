@@ -1,58 +1,64 @@
-import React from 'react'
-import {useState, useEffect} from 'react'
+import React, { useState } from 'react'
 
 const Blog_subheader1 = () => {
-
-    const [showText, setShowText] = useState(false);
+  const [showText, setShowText] = useState(false)
 
   return (
-    <div className="block justify-center h-screen w-full bg-gray-100 text-black">
-      <div className="pt-35 bg-gray-100">
-        <p className="text-xs uppercase pl-160">our blog</p>
-        <div className="item-center pt-5">
-          <h2 className="uppercase font-bold text-4xl pl-120">most recent post</h2>
-          <div className="pt-10 text-left bg-white flex item-center w-280 h-auto ml-20 mt-15">
-            <div>
-                <img src="src/assets/blog1.png" alt="image1"  className="w-100 h-80 mb-10 ml-15"/>
+    <section className="w-full bg-gray-100 text-black py-12">
+      <div className="container mx-auto px-4">
+        <p className="text-xs uppercase text-center md:text-left">our blog</p>
+        <h2 className="uppercase font-bold text-2xl md:text-4xl text-center md:text-left mt-2">most recent post</h2>
+
+        <div className="mt-8 bg-white rounded-lg shadow overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3">
+            <div className="md:col-span-1">
+              <img src="src/assets/blog1.png" alt="image1" className="w-full h-auto object-cover md:h-full" />
             </div>
-            <div className="item-center ml-10 pb-5">
-                <div className="flex text-xs uppercase font-light">
-                    <p className="mr-80"> tuesday 13 may,2022</p>
-                    <p>by john hunau deo</p>
-                </div>
-                <h3 className="uppercase font-bold text-3xl pt-5 pb-2">church was doing what he often</h3>
-                <h3 className="uppercase font-bold text-3xl pb-5">did when dropped an oracle</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, aliquid vel quam</p>
-                <p>perferendis officiis totam est cum sapiente unde, blanditiis, dolorum nobis. Expedita</p>
-                <p>pariatur numquam! Eius, tenetur, et numquam eaque officiis sequi ab consequuntur,</p>
-                <p className="pb-5">minima earum molestiae omnis incidunt rem veritatis dolorum. Fugiat.</p>
-                <div>
-                    <button onClick={() => setShowText(!showText)} className="bg-orange-200 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded hover:text-gray-300 hover:font-bold hover:rounded hover:bg-gray-800 hover-pr-2 hover-pl-2 font-bold pt-2 pb-2">
-                        {showText ? 'see less' : 'Learn more'}
-                    </button>
-                    {showText && 
-                        <div className="text-3xl font-light mb-6">
-                            <p>Lorem ipsum dolor sit, amet </p>
-                            <p>consectetur adipisicing elit. Tempora, aliquid</p>
-                            <p> vel quam adipisci nesciunt </p>
-                            <p>perferendis officiis totam est cum</p>
-                            <p> sapiente unde, blanditiis, dolorum nobis.</p> 
-                            <p>Expedita corporis quasi</p>
-                            <p>pariatur numquam! Eius, tenetur, et </p>
-                            <p>numquam eaque officiis sequi ab</p> 
-                            <p>consequuntur dicta tempore error, minima</p>
-                            <p>earum molestiae omnis incidunt rem</p>
-                            <p>veritatis dolorum. Fugiat.</p>
-                            <p>minima earum molestiae omnis incidunt</p>
-                            <p>rem veritatis dolorum. Fugiat.</p>
-                        </div>
-                    }
-                </div>
+
+            <div className="p-6 md:col-span-2">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center text-xs uppercase font-light text-gray-600">
+                <span className="">Tuesday 13 May, 2022</span>
+                <span className="mt-2 sm:mt-0">by John Hunau Deo</span>
+              </div>
+
+              <h3 className="uppercase font-bold text-xl md:text-3xl mt-4">church was doing what he often</h3>
+              <h3 className="uppercase font-bold text-xl md:text-3xl">did when dropped an oracle</h3>
+
+              <div className="mt-4 text-sm text-gray-800 space-y-2">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, aliquid vel quam perferendis
+                  officiis totam est cum sapiente unde, blanditiis, dolorum nobis. Expedita
+                </p>
+                <p>
+                  Pariatur numquam! Eius, tenetur, et numquam eaque officiis sequi ab consequuntur, minima earum
+                  molestiae omnis incidunt rem veritatis dolorum. Fugiat.
+                </p>
+              </div>
+
+              <div className="mt-4">
+                <button
+                  onClick={() => setShowText(!showText)}
+                  className="bg-amber-300 hover:bg-amber-400 text-black font-bold py-2 px-4 rounded"
+                >
+                  {showText ? 'See less' : 'Learn more'}
+                </button>
+
+                {showText && (
+                  <div className="mt-4 text-sm leading-relaxed text-gray-700 space-y-1">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, aliquid</p>
+                    <p>vel quam adipisci nesciunt perferendis officiis totam est cum</p>
+                    <p>sapiente unde, blanditiis, dolorum nobis. Expedita corporis quasi</p>
+                    <p>pariatur numquam! Eius, tenetur, et numquam eaque officiis sequi ab</p>
+                    <p>consequuntur dicta tempore error, minima earum molestiae omnis incidunt</p>
+                    <p>rem veritatis dolorum. Fugiat.</p>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

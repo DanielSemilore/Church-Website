@@ -1,42 +1,93 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 const SubHeader2 = () => {
-  const [readmore, setReadmore] = useState(false);
+  const [readmore, setReadmore] = useState(false)
+
   return (
-    <div className="block justify-center h-screen w-full text-black">
-      <div className="pt-25">
-        <p className="text-xs uppercase pl-160">Sub+Headline</p>
-        <div className="item-center pt-5">
-          <h2 className="uppercase font-bold text-4xl pl-120">love and compassion</h2>
-          <div className="pt-15 text-center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore suscipit est quidem odit aliquid incidunt, dignissimos debitis officiis dicta!,</p>
-            <p>Explicabo assumenda officia, asperiores error enim, dolore totam dignissimos sint velit, sed quasi, Molestiae, dicta? repellat ab minima expedita qui,</p>
+    <section className="w-full bg-white text-gray-900">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
+        <p className="text-xs uppercase mb-3 text-center sm:text-left">Sub+Headline</p>
+
+        <div className="prose max-w-none text-center sm:text-left">
+          <h2 className="uppercase font-bold text-2xl sm:text-3xl md:text-4xl mb-4">
+            love and compassion
+          </h2>
+
+          <div className="text-base sm:text-lg leading-relaxed space-y-4 mb-6">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore suscipit est quidem
+              odit aliquid incidunt, dignissimos debitis officiis dicta!
+            </p>
+            <p>
+              Explicabo assumenda officia, asperiores error enim, dolore totam dignissimos sint velit, sed quasi.
+            </p>
             <p>Molestiae, dicta? repellat ab minima expedita qui.</p>
+
             {readmore && (
-                <p className="pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque nihil architecto corporis nemo consectetur voluptates et dicta praesentium beatae perferendis, facilis voluptatem? Dignissimos eius ut obcaecati! Accusantium culpa odio similique repudiandae delectus labore eum minus debitis esse est quos, dignissimos sed dolore nemo aliquid atque molestias! Similique, soluta voluptatem.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque nihil architecto corporis nemo
+                consectetur voluptates et dicta praesentium beatae perferendis, facilis voluptatem? Dignissimos eius ut
+                obcaecati!
+              </p>
             )}
-            <button onClick={() => setReadmore(!readmore)} className="mt-10 focus:outline-none bg-orange-200 text-black font-bold py-2 px-4 rounded hover:font-bold hover:rounded hover:bg-gray-800 hover-pr-2 hover-pl-2">
+
+            <div className="flex justify-center sm:justify-start">
+              <button
+                onClick={() => setReadmore((s) => !s)}
+                className="mt-4 inline-flex items-center px-4 py-2 bg-amber-300 text-black font-semibold rounded-md hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-300"
+                aria-expanded={readmore}
+              >
                 {readmore ? 'Read Less' : 'Read More'}
-            </button>
+              </button>
+            </div>
           </div>
-          <div className="flex justify-around uppercase text-left pt-10">
-            <img src="src/assets/Subheadline1.png" alt="first image" loading="lazy" className="rounded-lg shadow-md w-70" />
-            <img src="src/assets/Subheadline2.png" alt="second image" loading="lazy" className="rounded-lg shadow-md w-90 mt-20" />
-            <img src="src/assets/Subheadline3.png" alt="third image" loading="lazy" className="rounded-lg shadow-md w-70" />
+        </div>
+
+        {/* responsive image row */}
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
+          <img
+            src="/src/assets/Subheadline1.png"
+            alt="first"
+            loading="lazy"
+            className="w-full h-48 sm:h-40 md:h-52 object-cover rounded-lg shadow-md"
+          />
+          <img
+            src="/src/assets/Subheadline2.png"
+            alt="second"
+            loading="lazy"
+            className="w-full h-48 sm:h-40 md:h-52 object-cover rounded-lg shadow-md"
+          />
+          <img
+            src="/src/assets/Subheadline3.png"
+            alt="third"
+            loading="lazy"
+            className="w-full h-48 sm:h-40 md:h-52 object-cover rounded-lg shadow-md"
+          />
+        </div>
+
+        {/* mission section */}
+        <div className="mt-10 text-center sm:text-left">
+          <p className="text-xs uppercase">our mission & vision</p>
+          <h3 className="font-bold text-xl sm:text-2xl mt-3">celebrate with us</h3>
+          <div className="mt-4 space-y-2 text-sm sm:text-base">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore suscipit est quidem odit
+              aliquid incidunt.
+            </p>
+            <p>Molestiae, dicta? repellat ab minima expedita qui.</p>
           </div>
-          <div className="text-center uppercase pt-10">
-            <p className="text-xs">our mission & vision</p>
-            <h3 className="font-bold text-3xl pt-5">celebrate with us</h3>
-            <p className="pt-5 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore molestias labore suscipit est quidem odit aliquid incidunt, dignissimos debitis officiis dicta!,</p>
-            <p className="text-xs">Molestiae, dicta? repellat ab minima expedita qui.</p>
-            <button  onClick={() => setReadmore(!readmore)} className="mt-5 text-xs focus:outline-none text-black hover:font-bold py-2 px-4 hover:rounded hover:bg-gray-800 hover-pr-2 hover-pl-2">
-                {readmore ? 'Read Less' : 'Read More'}
+
+          <div className="mt-5">
+            <button
+              onClick={() => setReadmore((s) => !s)}
+              className="inline-flex items-center px-4 py-2 bg-amber-300 text-black font-semibold rounded-md hover:bg-amber-400 focus:outline-none"
+            >
+              {readmore ? 'Read Less' : 'Read More'}
             </button>
           </div>
         </div>
       </div>
-    </div>  
+    </section>
   )
 }
 

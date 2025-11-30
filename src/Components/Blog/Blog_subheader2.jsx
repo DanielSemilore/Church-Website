@@ -2,90 +2,106 @@ import React from 'react'
 
 const Blog_subheader2 = () => {
   return (
-    <div className="block justify-center h-auto w-full text-black bg-gray-100">
-      <div className="pt-25">
-        <div className="item-center pt-5">
-          <h2 className="uppercase font-bold text-4xl text-center">all blog posts</h2>
-          <div className="flex justify-around pt-20 text-left">
-            <div className="bg-amber-200 h-90 w-70 mr-5 ml-1">
-              <p className="text-xs font-semibold pl-5 pt-15 uppercase text-amber-600">relationship</p>
-              <h3 className="font-bold text-2xl pl-5 pt-5 uppercase">THE BEST WAY TO</h3>
-              <h3 className="font-bold text-2xl pl-5 uppercase">INSPIRE PEOPLE</h3>
-              <p className="pt-5 pl-5 font-semibold text-xs">Lorem ipsum dolor sit amet,</p>
-              <p className="pl-5 font-semibold text-xs">consectetur adipiscing elit,</p>
-              <p className="pl-5 font-semibold text-xs">sed do eiusmod tempor incididunt,</p>
-              <p className="pl-5 font-semibold text-xs">ut labore et dolore magna aliqua.</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-10">by mathew johnson</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-2">Tuesday 13 May,2021</p>
-              <div className="bg-amber-300 h-3 w-70 mt-6"></div>
+    <div className="w-full text-black bg-gray-100">
+      <div className="container mx-auto px-4 py-12">
+        <div className="text-center">
+          <h2 className="uppercase font-bold text-3xl sm:text-4xl">all blog posts</h2>
+        </div>
+
+        {/* first row */}
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <article className="bg-amber-200 rounded-md p-6 shadow-sm">
+            <p className="text-xs sm:text-sm font-semibold uppercase text-amber-600">relationship</p>
+            <h3 className="font-bold text-xl sm:text-2xl mt-2 uppercase">THE BEST WAY TO<br/>INSPIRE PEOPLE</h3>
+            <div className="mt-3 text-sm text-gray-700 space-y-1">
+              <p>Lorem ipsum dolor sit amet,</p>
+              <p>consectetur adipiscing elit,</p>
+              <p>sed do eiusmod tempor incididunt,</p>
+              <p>ut labore et dolore magna aliqua.</p>
             </div>
-            <div className="bg-amber-200 h-90 w-70 mr-5 ml-1">
-              <p className="text-xs font-semibold pl-5 pt-15 uppercase text-amber-600">relationship</p>
-              <h3 className="font-bold text-2xl pl-5 pt-5 uppercase">HOW TO SHOW</h3>
-              <h3 className="font-bold text-2xl pl-5 uppercase">COMPASSION</h3>
-              <p className="pt-5 pl-5 font-semibold text-xs">Lorem ipsum dolor sit amet,</p>
-              <p className="pl-5 font-semibold text-xs">consectetur adipiscing elit,</p>
-              <p className="pl-5 font-semibold text-xs">sed do eiusmod tempor incididunt,</p>
-              <p className="pl-5 font-semibold text-xs">ut labore et dolore magna aliqua.</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-10">by mathew johnson</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-2">Tuesday 13 May,2021</p>
+            <p className="mt-4 text-xs uppercase text-gray-600">by mathew johnson</p>
+            <p className="text-xs text-gray-600">Tuesday 13 May, 2021</p>
+            <div className="bg-amber-300 h-1 w-16 mt-4 rounded" />
+          </article>
+
+          <article className="bg-amber-200 rounded-md p-6 shadow-sm">
+            <p className="text-xs sm:text-sm font-semibold uppercase text-amber-600">relationship</p>
+            <h3 className="font-bold text-xl sm:text-2xl mt-2 uppercase">HOW TO SHOW<br/>COMPASSION</h3>
+            <div className="mt-3 text-sm text-gray-700 space-y-1">
+              <p>Lorem ipsum dolor sit amet,</p>
+              <p>consectetur adipiscing elit,</p>
+              <p>sed do eiusmod tempor incididunt,</p>
+              <p>ut labore et dolore magna aliqua.</p>
             </div>
-            <div className="bg-amber-200 h-90 w-70 mr-5 ml-1">
-              <p className="text-xs font-semibold pl-5 pt-15 uppercase text-amber-600">relationship</p>
-              <h3 className="font-bold text-2xl pl-5 pt-5 uppercase">THE BIBLICAL</h3>
-              <h3 className="font-bold text-2xl pl-5 uppercase">PURPOSE OF MONEY</h3>
-              <p className="pt-5 pl-5 font-semibold text-xs">Lorem ipsum dolor sit amet,</p>
-              <p className="pl-5 font-semibold text-xs">consectetur adipiscing elit,</p>
-              <p className="pl-5 font-semibold text-xs">sed do eiusmod tempor incididunt,</p>
-              <p className="pl-5 font-semibold text-xs">ut labore et dolore magna aliqua.</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-10">by mathew johnson</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-2">Tuesday 13 May,2021</p>
+            <p className="mt-4 text-xs uppercase text-gray-600">by mathew johnson</p>
+            <p className="text-xs text-gray-600">Tuesday 13 May, 2021</p>
+          </article>
+
+          <article className="bg-amber-200 rounded-md p-6 shadow-sm">
+            <p className="text-xs sm:text-sm font-semibold uppercase text-amber-600">relationship</p>
+            <h3 className="font-bold text-xl sm:text-2xl mt-2 uppercase">THE BIBLICAL<br/>PURPOSE OF MONEY</h3>
+            <div className="mt-3 text-sm text-gray-700 space-y-1">
+              <p>Lorem ipsum dolor sit amet,</p>
+              <p>consectetur adipiscing elit,</p>
+              <p>sed do eiusmod tempor incididunt,</p>
+              <p>ut labore et dolore magna aliqua.</p>
             </div>
-            <div className="bg-amber-200 h-90 w-70 mr-5 ml-1">
-              <p className="text-xs font-semibold pl-5 pt-15 uppercase text-amber-600">relationship</p>
-              <h3 className="font-bold text-2xl pl-5 pt-5 uppercase">THE BEST WAY TO</h3>
-              <h3 className="font-bold text-2xl pl-5 uppercase">INSPIRE PEOPLE</h3>
-              <p className="pt-5 pl-5 font-semibold text-xs">Lorem ipsum dolor sit amet,</p>
-              <p className="pl-5 font-semibold text-xs">consectetur adipiscing elit,</p>
-              <p className="pl-5 font-semibold text-xs">sed do eiusmod tempor incididunt,</p>
-              <p className="pl-5 font-semibold text-xs">ut labore et dolore magna aliqua.</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-10">by mathew johnson</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-2">Tuesday 13 May,2021</p>
+            <p className="mt-4 text-xs uppercase text-gray-600">by mathew johnson</p>
+            <p className="text-xs text-gray-600">Tuesday 13 May, 2021</p>
+          </article>
+
+          <article className="bg-amber-200 rounded-md p-6 shadow-sm">
+            <p className="text-xs sm:text-sm font-semibold uppercase text-amber-600">relationship</p>
+            <h3 className="font-bold text-xl sm:text-2xl mt-2 uppercase">THE BEST WAY TO<br/>INSPIRE PEOPLE</h3>
+            <div className="mt-3 text-sm text-gray-700 space-y-1">
+              <p>Lorem ipsum dolor sit amet,</p>
+              <p>consectetur adipiscing elit,</p>
+              <p>sed do eiusmod tempor incididunt,</p>
+              <p>ut labore et dolore magna aliqua.</p>
             </div>
-          </div>
-          <div className="flex justify-around pt-5 text-left mr-85 ml-3 pb-40">
-            <div className="bg-amber-200 h-90 w-70 mr-5 ml-1">
-              <p className="text-xs font-semibold pl-5 pt-15 uppercase text-amber-600">relationship</p>
-              <h3 className="font-bold text-2xl pl-5 pt-5 uppercase">WHAT IT MEANS TO</h3>
-              <h3 className="font-bold text-2xl pl-5 uppercase">BE A DISCIPLE</h3>
-              <p className="pt-5 pl-5 font-semibold text-xs">We both celebrate and challenge the</p>
-              <p className="pl-5 font-semibold text-xs">culture around us as we orient our</p>
-              <p className="pl-5 font-semibold text-xs">lives around Jesus. We want</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-10">by mathew johnson</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-2">Tuesday 13 May,2021</p>
+            <p className="mt-4 text-xs uppercase text-gray-600">by mathew johnson</p>
+            <p className="text-xs text-gray-600">Tuesday 13 May, 2021</p>
+          </article>
+        </div>
+
+        {/* second row */}
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <article className="bg-amber-200 rounded-md p-6 shadow-sm">
+            <p className="text-xs sm:text-sm font-semibold uppercase text-amber-600">relationship</p>
+            <h3 className="font-bold text-xl sm:text-2xl mt-2 uppercase">WHAT IT MEANS TO<br/>BE A DISCIPLE</h3>
+            <div className="mt-3 text-sm text-gray-700">
+              <p>We both celebrate and challenge the</p>
+              <p>culture around us as we orient our</p>
+              <p>lives around Jesus. We want</p>
             </div>
-            <div className="bg-amber-200 h-90 w-70 mr-5 ml-1">
-              <p className="text-xs font-semibold pl-5 pt-15 uppercase text-amber-600">relationship</p>
-              <h3 className="font-bold text-2xl pl-5 pt-5 uppercase">WHAT IT MEANS TO</h3>
-              <h3 className="font-bold text-2xl pl-5 uppercase">BELIEVE</h3>
-              <p className="pt-5 pl-5 font-semibold text-xs">We both celebrate and challenge the</p>
-              <p className="pl-5 font-semibold text-xs">culture around us as we orient our</p>
-              <p className="pl-5 font-semibold text-xs">lives around Jesus. We want</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-10">by mathew johnson</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-2">Tuesday 13 May,2021</p>
+            <p className="mt-4 text-xs uppercase text-gray-600">by mathew johnson</p>
+            <p className="text-xs text-gray-600">Tuesday 13 May, 2021</p>
+          </article>
+
+          <article className="bg-amber-200 rounded-md p-6 shadow-sm">
+            <p className="text-xs sm:text-sm font-semibold uppercase text-amber-600">relationship</p>
+            <h3 className="font-bold text-xl sm:text-2xl mt-2 uppercase">WHAT IT MEANS TO<br/>BELIEVE</h3>
+            <div className="mt-3 text-sm text-gray-700">
+              <p>We both celebrate and challenge the</p>
+              <p>culture around us as we orient our</p>
+              <p>lives around Jesus. We want</p>
             </div>
-            <div className="bg-amber-200 h-90 w-80">
-              <p className="text-xs font-semibold pl-5 pt-15 uppercase text-amber-600">relationship</p>
-              <h3 className="font-bold text-2xl pl-5 pt-5 uppercase">the modern chruch</h3>
-              <h3 className="font-bold text-2xl pl-5 uppercase">in 2022</h3>
-              <p className="pt-5 pl-5 font-semibold text-xs">We both celebrate and challenge the</p>
-              <p className="pl-5 font-semibold text-xs">culture around us as we orient our</p>
-              <p className="pl-5 font-semibold text-xs">lives around Jesus. We want</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-10">by mathew johnson</p>
-              <p className="pl-5 font-semibold uppercase text-xs pt-2">Tuesday 13 May,2021</p>
+            <p className="mt-4 text-xs uppercase text-gray-600">by mathew johnson</p>
+            <p className="text-xs text-gray-600">Tuesday 13 May, 2021</p>
+          </article>
+
+          <article className="bg-amber-200 rounded-md p-6 shadow-sm">
+            <p className="text-xs sm:text-sm font-semibold uppercase text-amber-600">relationship</p>
+            <h3 className="font-bold text-xl sm:text-2xl mt-2 uppercase">THE MODERN CHURCH<br/>IN 2022</h3>
+            <div className="mt-3 text-sm text-gray-700">
+              <p>We both celebrate and challenge the</p>
+              <p>culture around us as we orient our</p>
+              <p>lives around Jesus. We want</p>
             </div>
-          </div>
-        </div>  
+            <p className="mt-4 text-xs uppercase text-gray-600">by mathew johnson</p>
+            <p className="text-xs text-gray-600">Tuesday 13 May, 2021</p>
+          </article>
+        </div>
       </div>
     </div>
   )

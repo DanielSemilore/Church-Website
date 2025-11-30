@@ -1,51 +1,69 @@
 import React from 'react'
-import { Link, Links } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const SubHeader4 = () => {
   return (
-    <div className="block justify-center h-screen w-full text-black">
-      <div className="text-center pt-25">
-        <p className="text-xs uppercase pb-5">upcoming sermons</p>
-        <h1 className="font-bold uppercase text-4xl">join us and become part</h1>
-        <h2 className="font-bold text-4xl uppercase pt-5">of something great</h2>
-        <div className="flex text-left pt-10 pl-33">
-          <div className="bg-amber-100 h-140 w-100 ml-1">              
-            <section className="pl-14 pt-5">
-              <h3 className="font-bold uppercase text-3xl pl-71">20</h3>
-              <div className="flex pb-10">
-                <p className="font-semibold text-amber-600 pr-30 uppercase">upcoming sermons</p>
-                <p className="uppercase">july</p>
-              </div>
-              <h4 className="font-bold uppercase text-2xl">watch and listen</h4>
-              <h4 className="font-bold uppercase text-2xl pb-8">to our sermons</h4>
-              <p className="text-xs pr-10 font-light pb-3">Lorem ipsum dolor sit amet, consectetur</p>
-              <p className="text-xs pr-10 font-light pb-8">adipiscing elit, Sed do eiusmod tempor.</p>
-              <div className="pb-5 flex">
-                <div>
-                  <img src="src/assets/Home4.svg" alt="icon4"/>
-                </div>
-                <div>
-                  <p className="font-normal pl-5">Friday 23:39 IST</p>
-                  <p className="font-normal pl-5">Saturday 11:20 ISD</p>
-                </div>
-              </div>
-              <div className="pb-10 flex">
-                <div>
-                  <img src="src/assets/Home5.svg" alt="icon5"/>
-                </div>
-                <div>
-                  <p className="font-normal pl-5">No 233 Main St. New York,</p>
-                  <p className="font-normal pl-5">United States</p>
-                </div>
-              </div>
-              <button className="pl-5 h-15 w-40 bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hover:text-gray-300 hover:font-bold hover:rounded hover:bg-gray-800 hover-pr-2 hover-pl-2 font-bold pt-2 pb-2 uppercase">register</button>
-            </section>
-          </div>
-          <img src="src/assets/SUB+HEADER.png" alt="Sub Header" className="h-140 mb-5 w-170" />
+    <section className="w-full text-black py-12 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center">
+          <p className="text-xs uppercase pb-3">upcoming sermons</p>
+          <h1 className="font-bold uppercase text-2xl sm:text-3xl md:text-4xl">join us and become part</h1>
+          <h2 className="font-bold uppercase text-2xl sm:text-3xl md:text-4xl pt-2 md:pt-4">of something great</h2>
         </div>
-        <Link to="/sermons" className="text-sm hover:text-amber-600 hover:font-bold cursor-pointer pl-250">view all sermons</Link>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 items-start">
+          {/* Card */}
+          <div className="bg-amber-100 rounded-lg p-6 max-w-xl mx-auto md:mx-0">
+            <div className="flex items-start gap-6">
+              <div className="flex-shrink-0">
+                <div className="text-center">
+                  <h3 className="font-bold uppercase text-4xl md:text-6xl">20</h3>
+                  <p className="text-sm uppercase text-amber-600 mt-1">july</p>
+                </div>
+              </div>
+
+              <div className="flex-1">
+                <p className="font-semibold text-amber-600 uppercase">upcoming sermons</p>
+                <h4 className="font-bold uppercase text-xl mt-2">watch and listen</h4>
+                <h4 className="font-bold uppercase text-xl">to our sermons</h4>
+                <p className="text-xs text-gray-700 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+
+                <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="flex items-start gap-3">
+                    <img src="src/assets/Home4.svg" alt="icon4" className="w-6 h-6"/>
+                    <div>
+                      <p className="font-normal text-sm">Friday 23:39 IST</p>
+                      <p className="font-normal text-sm">Saturday 11:20 ISD</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <img src="src/assets/Home5.svg" alt="icon5" className="w-6 h-6"/>
+                    <div>
+                      <p className="font-normal text-sm">No 233 Main St. New York,</p>
+                      <p className="font-normal text-sm">United States</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6">
+                  <button className="bg-black text-white font-bold py-2 px-4 rounded uppercase hover:bg-gray-800">register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Image / Visual */}
+          <div className="w-full flex items-center justify-center">
+            <img src="src/assets/SUB+HEADER.png" alt="Sub Header" className="w-full max-w-md md:max-w-none h-56 md:h-96 object-cover rounded" />
+          </div>
+        </div>
+
+        <div className="text-center mt-6">
+          <Link to="/sermons" className="text-sm hover:text-amber-600 hover:font-bold">view all sermons</Link>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -1,49 +1,98 @@
 import React from 'react'
-import { Link, Links } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Contact_subheader = () => {
-  return (
-    <div className="block justify-center h-auto w-full item-center bg-gray-100 pb-20 text-black">
-        <div className="pt-40 flex text-left">
-            <div className="rounded-md ml-5 w-400 bg-white h-130 text-left item-left pl-10 mr-5">
-                <form className="block pt-10 pb-10">
-                    <h1 className=" uppercase font-bold text-2xl pt-10 pb-10">contact form:</h1>
-                    <input required autoComplete="on" type="text" className="border rounded-md text-lg border-white bg-gray-50 p-2 mb-2 w-100 font-bold text-black h-auto text-2xl" placeholder="Your full Name" />
-                    <input required autoComplete="on" type="email" className="border rounded-md text-lg border-white bg-gray-50 p-2 mb-2 w-100 font-bold text-black h-auto text-2xl" placeholder="Your Email" />
-                    <input required autoComplete="on" type="text" className="border rounded-md text-lg border-white bg-gray-50 p-2 mb-2 w-100 font-bold text-black h-auto text-2xl" placeholder="Query Related" />
-                    <textarea required className="border rounded-md text-lg border-white bg-gray-50 p-2 mb-2 w-100 font-bold text-black h-auto text-2xl" placeholder="Message"></textarea> 
-                    <button className="bg-orange-200 mt-10 hover:bg-blue-700 h-10 text-black font-bold py-2 px-4 rounded hover:text-gray-300 hover:font-bold hover:rounded hover:bg-gray-800 hover-pr-2 hover-pl-2">
-                        <Link target="_blank" to="*" className="pl-30 pr-30 uppercase text-center">SEND MESSAGE</Link>
-                    </button>
-                </form>
-            </div>
-            <div className="pl-5 h-auto w-500">
-                <p className="text-sm font-light pt-20">Address:</p>
-                <br />
-                <h1 className=" uppercase font-bold text-1xl">nh 234 public square</h1>
-                <h1 className=" uppercase font-bold text-1xl">san francisco 65368</h1>
-                <br />
-                <p className="text-sm font-light">Contact Details:</p>
-                <br />
-                <h1 className=" uppercase font-bold text-1xl">(480) 555-0103</h1>
-                <h1 className=" uppercase font-bold text-1xl">Finsweet@Example.com</h1>
-                <br />
-                <p className="text-sm font-light">Find us here:</p>
-                <div className="pt-5 flex">
-                    <Link target="_blank" to ="*">
-                        <img src="src/assets/Facebook.svg" alt="facebook icon" className="mr-5 hover:bg-black w-10 h-10"/>
-                    </Link>
-                    <Link target="_blank" to ="*">
-                        <img src="src/assets/Twitter.svg" alt="twitter icon" className="mr-5 hover:bg-black w-10 h-10"/>
-                    </Link>
-                    <Link target="_blank" to ="*">
-                        <img src="src/assets/Linkedin.svg" alt="linkedin icon" className="mr-5 hover:bg-black w-10 h-10"/>
-                    </Link>
+    return (
+        <section className="w-full bg-gray-100 text-black py-12">
+            <div className="container mx-auto px-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                    {/* Contact form */}
+                    <div className="bg-white rounded-md p-6 shadow">
+                        <form className="space-y-4">
+                            <h2 className="uppercase font-bold text-2xl">Contact form</h2>
+
+                            <div>
+                                <label className="sr-only">Full name</label>
+                                <input
+                                    required
+                                    autoComplete="name"
+                                    type="text"
+                                    className="block w-full border rounded-md bg-gray-50 p-3 text-base"
+                                    placeholder="Your full name"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="sr-only">Email</label>
+                                <input
+                                    required
+                                    autoComplete="email"
+                                    type="email"
+                                    className="block w-full border rounded-md bg-gray-50 p-3 text-base"
+                                    placeholder="Your email"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="sr-only">Subject</label>
+                                <input
+                                    required
+                                    type="text"
+                                    className="block w-full border rounded-md bg-gray-50 p-3 text-base"
+                                    placeholder="Query related"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="sr-only">Message</label>
+                                <textarea
+                                    required
+                                    className="block w-full border rounded-md bg-gray-50 p-3 text-base min-h-[120px]"
+                                    placeholder="Message"
+                                />
+                            </div>
+
+                            <div>
+                                <Link to="*" target="_blank" className="inline-block bg-orange-200 hover:bg-orange-300 text-black font-bold py-2 px-6 rounded uppercase">
+                                    Send Message
+                                </Link>
+                            </div>
+                        </form>
+                    </div>
+
+                    {/* Contact details */}
+                    <aside className="space-y-4">
+                        <div>
+                            <p className="text-sm font-light">Address:</p>
+                            <h3 className="uppercase font-bold">NH 234 Public Square</h3>
+                            <h3 className="uppercase font-bold">San Francisco 65368</h3>
+                        </div>
+
+                        <div>
+                            <p className="text-sm font-light">Contact Details:</p>
+                            <h3 className="uppercase font-bold">(480) 555-0103</h3>
+                            <h3 className="uppercase font-bold">Finsweet@Example.com</h3>
+                        </div>
+
+                        <div>
+                            <p className="text-sm font-light">Find us here:</p>
+                            <div className="pt-2 flex items-center gap-4">
+                                <Link to="*" target="_blank" aria-label="Facebook">
+                                    <img src="src/assets/Facebook.svg" alt="facebook icon" className="w-10 h-10" />
+                                </Link>
+                                <Link to="*" target="_blank" aria-label="Twitter">
+                                    <img src="src/assets/Twitter.svg" alt="twitter icon" className="w-10 h-10" />
+                                </Link>
+                                <Link to="*" target="_blank" aria-label="LinkedIn">
+                                    <img src="src/assets/Linkedin.svg" alt="linkedin icon" className="w-10 h-10" />
+                                </Link>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
             </div>
-        </div>
-    </div>
-  )
+        </section>
+    )
 }
 
 export default Contact_subheader
