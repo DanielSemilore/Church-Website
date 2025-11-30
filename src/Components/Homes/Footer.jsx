@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import FacebookIcon from '../../assets/Facebook.svg'
+import TwitterIcon from '../../assets/Twitter.svg'
+import LinkedinIcon from '../../assets/Linkedin.svg'
 
 const Footer = () => {
   return (
@@ -44,13 +47,13 @@ const Footer = () => {
 
             <div className="flex items-center justify-center sm:justify-start space-x-4">
               <a href="#" aria-label="Facebook" className="inline-block">
-                <img src="src/assets/Facebook.svg" alt="Facebook" className="w-6 h-6 sm:w-7 sm:h-7" />
+                <img src={FacebookIcon} alt="Facebook" className="w-6 h-6 sm:w-7 sm:h-7" />
               </a>
               <a href="#" aria-label="Twitter" className="inline-block">
-                <img src="src/assets/Twitter.svg" alt="Twitter" className="w-6 h-6 sm:w-7 sm:h-7" />
+                <img src={TwitterIcon} alt="Twitter" className="w-6 h-6 sm:w-7 sm:h-7" />
               </a>
               <a href="#" aria-label="LinkedIn" className="inline-block">
-                <img src="src/assets/Linkedin.svg" alt="LinkedIn" className="w-6 h-6 sm:w-7 sm:h-7" />
+                <img src={LinkedinIcon} alt="LinkedIn" className="w-6 h-6 sm:w-7 sm:h-7" />
               </a>
             </div>
           </div>

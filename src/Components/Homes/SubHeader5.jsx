@@ -1,8 +1,10 @@
 import React from 'react'
+import bg2 from '../../assets/bg2.png'
+import Home6 from '../../assets/Home6.svg'
 
 const SubHeader5 = () => {
   return (
-    <section className="w-full bg-[url('src/assets/bg2.png')] bg-cover bg-center">
+    <section className="w-full bg-cover bg-center" style={{ backgroundImage: `url(${bg2})` }}>
       <div className="container mx-auto px-4 py-16">
         <div className="bg-white bg-opacity-80 rounded-lg p-6 md:p-10 max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
@@ -15,7 +17,7 @@ const SubHeader5 = () => {
             </div>
 
             <div className="flex-shrink-0">
-              <img src="src/assets/Home6.svg" alt="icon6" className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24" />
+              <img src={Home6} alt="icon6" className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24" />
             </div>
           </div>
 

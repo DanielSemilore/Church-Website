@@ -1,8 +1,9 @@
 import React from 'react'
+import bg3 from '../../assets/bg3.png'
 
 const Head = () => {
   return (
-    <div className="w-full bg-[url('/src/assets/bg3.png')] bg-cover bg-center">
+    <div className="w-full bg-cover bg-center" style={{ backgroundImage: `url(${bg3})` }}>
       {/* semi-transparent overlay for legibility */}
       <div className="w-full bg-black/40">
         <div className="container mx-auto px-4 py-20 sm:py-28 flex items-center justify-center min-h-[60vh]">

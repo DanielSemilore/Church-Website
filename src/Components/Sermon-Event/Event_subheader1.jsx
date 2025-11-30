@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Event1 from '../../assets/Event1.png'
+import Home4 from '../../assets/Home4.svg'
+import Home5 from '../../assets/Home5.svg'
 
 const Event_subheader1 = () => {
   return (
@@ -8,7 +11,7 @@ const Event_subheader1 = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           {/* Left: event details */}
           <div className="space-y-4">
-            <img src="src/assets/Event1.png" alt="eventimage1" className="w-full max-w-xl h-auto rounded" />
+            <img src={Event1} alt="eventimage1" className="w-full max-w-xl h-auto rounded" />
             <p className="text-xs font-semibold uppercase text-amber-600">upcoming sermon</p>
             <h1 className="uppercase font-bold text-2xl md:text-4xl">HOW TO TRULY TRUST SOMEONE</h1>
             <div className="space-y-2 text-sm text-gray-800">
@@ -36,7 +39,7 @@ const Event_subheader1 = () => {
 
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
               <div className="flex items-start gap-3">
-                <img src="src/assets/Home5.svg" alt="event-icon1" className="w-5 h-5 mt-1" />
+                <img src={Home5} alt="event-icon1" className="w-5 h-5 mt-1" />
                 <p className="text-xs">
                   No 233 Main St. New York,
                   <br />
@@ -45,7 +48,7 @@ const Event_subheader1 = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <img src="src/assets/Home4.svg" alt="event-icon2" className="w-5 h-5 mt-1" />
+                <img src={Home4} alt="event-icon2" className="w-5 h-5 mt-1" />
                 <p className="text-xs">13 May, 2018</p>
               </div>
             </div>

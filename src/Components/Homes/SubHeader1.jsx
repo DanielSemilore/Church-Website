@@ -1,9 +1,12 @@
 import React from 'react'
+import Home1 from '../../assets/Home1.svg'
+import Home2 from '../../assets/Home2.svg'
+import Home3 from '../../assets/Home3.svg'
 
 const SubHeader1 = () => {
   const cards = [
     {
-      img: '/src/assets/Home1.svg',
+      img: Home1,
       title: 'About us',
       lines: [
         'Lorem ipsum dolor sit amet,',
@@ -13,7 +16,7 @@ const SubHeader1 = () => {
       ]
     },
     {
-      img: '/src/assets/Home2.svg',
+      img: Home2,
       title: 'Get involved',
       lines: [
         'Lorem ipsum dolor sit amet,',
@@ -23,7 +26,7 @@ const SubHeader1 = () => {
       ]
     },
     {
-      img: '/src/assets/Home3.svg',
+      img: Home3,
       title: 'Giving back',
       lines: [
         'Lorem ipsum dolor sit amet,',

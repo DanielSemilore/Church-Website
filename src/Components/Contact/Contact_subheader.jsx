@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import FacebookIcon from '../../assets/Facebook.svg'
+import TwitterIcon from '../../assets/Twitter.svg'
+import LinkedinIcon from '../../assets/Linkedin.svg'
 
 const Contact_subheader = () => {
     return (
@@ -78,13 +81,13 @@ const Contact_subheader = () => {
                             <p className="text-sm font-light">Find us here:</p>
                             <div className="pt-2 flex items-center gap-4">
                                 <Link to="*" target="_blank" aria-label="Facebook">
-                                    <img src="src/assets/Facebook.svg" alt="facebook icon" className="w-10 h-10" />
+                                    <img src={FacebookIcon} alt="facebook icon" className="w-10 h-10" />
                                 </Link>
                                 <Link to="*" target="_blank" aria-label="Twitter">
-                                    <img src="src/assets/Twitter.svg" alt="twitter icon" className="w-10 h-10" />
+                                    <img src={TwitterIcon} alt="twitter icon" className="w-10 h-10" />
                                 </Link>
                                 <Link to="*" target="_blank" aria-label="LinkedIn">
-                                    <img src="src/assets/Linkedin.svg" alt="linkedin icon" className="w-10 h-10" />
+                                    <img src={LinkedinIcon} alt="linkedin icon" className="w-10 h-10" />
                                 </Link>
                             </div>
                         </div>

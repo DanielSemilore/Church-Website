@@ -1,4 +1,5 @@
 import React from 'react'
+import post2 from '../../assets/post2.png'
 
 const Post_subheader2 = () => {
   return (
@@ -21,7 +22,7 @@ const Post_subheader2 = () => {
         </p>
 
         <div className="my-6">
-          <img src="src/assets/post2.png" alt="post image" className="w-full h-auto max-w-3xl mx-auto rounded" />
+          <img src={post2} alt="post image" className="w-full h-auto max-w-3xl mx-auto rounded" />
         </div>
 
         <h3 className="uppercase font-bold text-xl md:text-2xl">LOREM IPSUM DOLOR SIT AMET</h3>

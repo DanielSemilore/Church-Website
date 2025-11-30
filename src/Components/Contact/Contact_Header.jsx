@@ -1,8 +1,9 @@
 import React from 'react'
+import bg5 from '../../assets/bg5.png'
 
 const Contact_Header = () => {
   return (
-    <section className="relative bg-[url('/src/assets/bg5.png')] bg-cover bg-center min-h-[60vh] w-full flex items-center">
+    <section className="relative bg-cover bg-center min-h-[60vh] w-full flex items-center" style={{ backgroundImage: `url(${bg5})` }}>
       {/* overlay for readability */}
       <div className="absolute inset-0 bg-black/50" />
 

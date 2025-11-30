@@ -1,4 +1,6 @@
 import React from 'react'
+import Home4 from '../../assets/Home4.svg'
+import Home5 from '../../assets/Home5.svg'
 
 const Sub_Header1 = () => {
   return (
@@ -22,15 +24,15 @@ const Sub_Header1 = () => {
               <p>Lorem ipsum dolor sit amet,</p>
               <p>consectetur adipiscing elit,</p>
             </div>
-            <div className="mt-4 flex items-center gap-3 text-xs font-semibold">
-              <img src="src/assets/Home4.svg" alt="icon4" className="w-5 h-5" />
+              <div className="mt-4 flex items-center gap-3 text-xs font-semibold">
+              <img src={Home4} alt="icon4" className="w-5 h-5" />
               <div>
                 <p>Friday 23:39 IST</p>
                 <p>Saturday 11:20 ISD</p>
               </div>
             </div>
             <div className="mt-3 flex items-center gap-3 text-xs font-semibold">
-              <img src="src/assets/Home5.svg" alt="icon5" className="w-5 h-5" />
+              <img src={Home5} alt="icon5" className="w-5 h-5" />
               <div>
                 <p>No 233 Main St. New York,</p>
                 <p>United States.</p>
@@ -52,14 +54,14 @@ const Sub_Header1 = () => {
               <p>consectetur adipiscing elit,</p>
             </div>
             <div className="mt-4 flex items-center gap-3 text-xs font-semibold">
-              <img src="src/assets/Home4.svg" alt="icon4" className="w-5 h-5" />
+              <img src={Home4} alt="icon4" className="w-5 h-5" />
               <div>
                 <p>Friday 23:39 IST</p>
                 <p>Saturday 11:20 ISD</p>
               </div>
             </div>
             <div className="mt-3 flex items-center gap-3 text-xs font-semibold">
-              <img src="src/assets/Home5.svg" alt="icon5" className="w-5 h-5" />
+              <img src={Home5} alt="icon5" className="w-5 h-5" />
               <div>
                 <p>No 233 Main St. New York,</p>
                 <p>United States.</p>
@@ -80,14 +82,14 @@ const Sub_Header1 = () => {
               <p>consectetur adipiscing elit,</p>
             </div>
             <div className="mt-4 flex items-center gap-3 text-xs font-semibold">
-              <img src="src/assets/Home4.svg" alt="icon4" className="w-5 h-5" />
+              <img src={Home4} alt="icon4" className="w-5 h-5" />
               <div>
                 <p>Friday 23:39 IST</p>
                 <p>Saturday 11:20 ISD</p>
               </div>
             </div>
             <div className="mt-3 flex items-center gap-3 text-xs font-semibold">
-              <img src="src/assets/Home5.svg" alt="icon5" className="w-5 h-5" />
+              <img src={Home5} alt="icon5" className="w-5 h-5" />
               <div>
                 <p>No 233 Main St. New York,</p>
                 <p>United States.</p>
@@ -108,14 +110,14 @@ const Sub_Header1 = () => {
               <p>consectetur adipiscing elit,</p>
             </div>
             <div className="mt-4 flex items-center gap-3 text-xs font-semibold">
-              <img src="src/assets/Home4.svg" alt="icon4" className="w-5 h-5" />
+              <img src={Home4} alt="icon4" className="w-5 h-5" />
               <div>
                 <p>Friday 23:39 IST</p>
                 <p>Saturday 11:20 ISD</p>
               </div>
             </div>
             <div className="mt-3 flex items-center gap-3 text-xs font-semibold">
-              <img src="src/assets/Home5.svg" alt="icon5" className="w-5 h-5" />
+              <img src={Home5} alt="icon5" className="w-5 h-5" />
               <div>
                 <p>No 233 Main St. New York,</p>
                 <p>United States.</p>

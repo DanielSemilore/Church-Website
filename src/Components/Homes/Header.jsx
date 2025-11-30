@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
+import bgHeader from '../../assets/bg.jpg'
 
 const Header = () => {
   const [showText, setShowText] = useState(false)
 
   return (
-    <div className="relative bg-[url('/src/assets/bg.jpg')] bg-center bg-cover min-h-screen w-full">
+    <div className="relative bg-center bg-cover min-h-screen w-full" style={{ backgroundImage: `url(${bgHeader})` }}>
       {/* dark overlay for contrast */}
       <div className="absolute inset-0 bg-black/50" />
 

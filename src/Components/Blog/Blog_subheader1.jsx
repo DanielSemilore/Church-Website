@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import blog1 from '../../assets/blog1.png'
 
 const Blog_subheader1 = () => {
   const [showText, setShowText] = useState(false)
@@ -12,7 +13,7 @@ const Blog_subheader1 = () => {
         <div className="mt-8 bg-white rounded-lg shadow overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-3">
             <div className="md:col-span-1">
-              <img src="src/assets/blog1.png" alt="image1" className="w-full h-auto object-cover md:h-full" />
+              <img src={blog1} alt="image1" className="w-full h-auto object-cover md:h-full" />
             </div>
 
             <div className="p-6 md:col-span-2">

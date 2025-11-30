@@ -1,4 +1,8 @@
 import React from 'react'
+import About1 from '../../assets/About1.png'
+import About2 from '../../assets/About2.png'
+import About3 from '../../assets/About3.png'
+import About4 from '../../assets/About4.png'
 
 const SUB_HEADER2 = () => {
   return (
@@ -23,7 +27,7 @@ const SUB_HEADER2 = () => {
               </div>
             </div>
             <div className="md:w-1/2">
-              <img src="src/assets/About1.png" alt="image1" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+              <img src={About1} alt="image1" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
             </div>
           </div>
 
@@ -38,7 +42,7 @@ const SUB_HEADER2 = () => {
               </div>
             </div>
             <div className="md:w-1/2">
-              <img src="src/assets/About2.png" alt="image2" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+              <img src={About2} alt="image2" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
             </div>
           </div>
 
@@ -53,7 +57,7 @@ const SUB_HEADER2 = () => {
               </div>
             </div>
             <div className="md:w-1/2">
-              <img src="src/assets/About3.png" alt="image3" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+              <img src={About3} alt="image3" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
             </div>
           </div>
 
@@ -68,7 +72,7 @@ const SUB_HEADER2 = () => {
               </div>
             </div>
             <div className="md:w-1/2">
-              <img src="src/assets/About4.png" alt="image4" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+              <img src={About4} alt="image4" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
             </div>
           </div>
         </div>

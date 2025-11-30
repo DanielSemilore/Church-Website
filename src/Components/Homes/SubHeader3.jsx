@@ -1,4 +1,8 @@
 import React from 'react'
+import sh1 from '../../assets/Sub+headline1.png'
+import sh2 from '../../assets/Sub+headline2.png'
+import sh3 from '../../assets/Sub+headline3.png'
+import sh4 from '../../assets/Sub+headline4.png'
 
 const SubHeader3 = () => {
     return (
@@ -10,7 +14,7 @@ const SubHeader3 = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8 items-start">
                     <div className="relative w-full max-w-xs mx-auto">
-                        <img src="src/assets/Sub+headline1.png" alt="image 1" loading="lazy" className="w-full h-64 md:h-80 object-cover rounded" />
+                        <img src={sh1} alt="image 1" loading="lazy" className="w-full h-64 md:h-80 object-cover rounded" />
                         <div className="absolute left-4 bottom-4 text-left text-white bg-gradient-to-t from-black/70 to-transparent p-3 rounded">
                             <h3 className="font-bold text-lg uppercase">watch and listen to</h3>
                             <h3 className="font-bold text-lg uppercase">our sermons</h3>
@@ -21,7 +25,7 @@ const SubHeader3 = () => {
                     </div>
 
                     <div className="relative w-full max-w-xs mx-auto">
-                        <img src="src/assets/Sub+headline2.png" alt="image 2" loading="lazy" className="w-full h-64 md:h-80 object-cover rounded" />
+                        <img src={sh2} alt="image 2" loading="lazy" className="w-full h-64 md:h-80 object-cover rounded" />
                         <div className="absolute left-4 bottom-4 text-left text-white bg-gradient-to-t from-black/60 to-transparent p-3 rounded">
                             <h3 className="font-bold text-lg uppercase">watch and listen to</h3>
                             <h3 className="font-bold text-lg uppercase">our sermons</h3>
@@ -29,7 +33,7 @@ const SubHeader3 = () => {
                     </div>
 
                     <div className="relative w-full max-w-xs mx-auto">
-                        <img src="src/assets/Sub+headline3.png" alt="image 3" loading="lazy" className="w-full h-64 md:h-80 object-cover rounded" />
+                        <img src={sh3} alt="image 3" loading="lazy" className="w-full h-64 md:h-80 object-cover rounded" />
                         <div className="absolute left-4 bottom-4 text-left text-white bg-gradient-to-t from-black/60 to-transparent p-3 rounded">
                             <h3 className="font-bold text-lg uppercase">watch and listen to</h3>
                             <h3 className="font-bold text-lg uppercase">our sermons</h3>
@@ -37,7 +41,7 @@ const SubHeader3 = () => {
                     </div>
 
                     <div className="relative w-full max-w-xs mx-auto">
-                        <img src="src/assets/Sub+headline4.png" alt="image 4" loading="lazy" className="w-full h-64 md:h-80 object-cover rounded" />
+                        <img src={sh4} alt="image 4" loading="lazy" className="w-full h-64 md:h-80 object-cover rounded" />
                         <div className="absolute left-4 bottom-4 text-left text-white bg-gradient-to-t from-black/60 to-transparent p-3 rounded">
                             <h3 className="font-bold text-lg uppercase">watch and listen to</h3>
                             <h3 className="font-bold text-lg uppercase">our sermons</h3>

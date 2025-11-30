@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Home4 from '../../assets/Home4.svg'
+import Home5 from '../../assets/Home5.svg'
+import SubHeaderImg from '../../assets/SUB+HEADER.png'
 
 const SubHeader4 = () => {
   return (
@@ -30,7 +33,7 @@ const SubHeader4 = () => {
 
                 <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="flex items-start gap-3">
-                    <img src="src/assets/Home4.svg" alt="icon4" className="w-6 h-6"/>
+                    <img src={Home4} alt="icon4" className="w-6 h-6"/>
                     <div>
                       <p className="font-normal text-sm">Friday 23:39 IST</p>
                       <p className="font-normal text-sm">Saturday 11:20 ISD</p>
@@ -38,7 +41,7 @@ const SubHeader4 = () => {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <img src="src/assets/Home5.svg" alt="icon5" className="w-6 h-6"/>
+                    <img src={Home5} alt="icon5" className="w-6 h-6"/>
                     <div>
                       <p className="font-normal text-sm">No 233 Main St. New York,</p>
                       <p className="font-normal text-sm">United States</p>
@@ -55,7 +58,7 @@ const SubHeader4 = () => {
 
           {/* Image / Visual */}
           <div className="w-full flex items-center justify-center">
-            <img src="src/assets/SUB+HEADER.png" alt="Sub Header" className="w-full max-w-md md:max-w-none h-56 md:h-96 object-cover rounded" />
+            <img src={SubHeaderImg} alt="Sub Header" className="w-full max-w-md md:max-w-none h-56 md:h-96 object-cover rounded" />
           </div>
         </div>
 

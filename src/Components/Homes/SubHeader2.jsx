@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import sub1 from '../../assets/Subheadline1.png'
+import sub2 from '../../assets/SubHeadline2.png'
+import sub3 from '../../assets/SubHeadline3.png'
 
 const SubHeader2 = () => {
   const [readmore, setReadmore] = useState(false)
@@ -46,19 +49,19 @@ const SubHeader2 = () => {
         {/* responsive image row */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
           <img
-            src="src/assets/Subheadline1.png"
+            src={sub1}
             alt="first"
             loading="lazy"
             className="w-full h-48 sm:h-40 md:h-52 object-cover rounded-lg shadow-md"
           />
           <img
-            src="/src/assets/Subheadline2.png"
+            src={sub2}
             alt="second"
             loading="lazy"
             className="w-full h-48 sm:h-40 md:h-52 object-cover rounded-lg shadow-md"
           />
           <img
-            src="/src/assets/Subheadline3.png"
+            src={sub3}
             alt="third"
             loading="lazy"
             className="w-full h-48 sm:h-40 md:h-52 object-cover rounded-lg shadow-md"
@@ -90,3 +93,5 @@ const SubHeader2 = () => {
     </section>
   )
 }
+
+export default SubHeader2
