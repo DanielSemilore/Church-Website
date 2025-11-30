@@ -46,7 +46,7 @@ const SubHeader2 = () => {
         {/* responsive image row */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
           <img
-            src="/src/assets/Subheadline1.png"
+            src="src/assets/Subheadline1.png"
             alt="first"
             loading="lazy"
             className="w-full h-48 sm:h-40 md:h-52 object-cover rounded-lg shadow-md"
@@ -90,5 +90,3 @@ const SubHeader2 = () => {
     </section>
   )
 }
-
-export default SubHeader2
