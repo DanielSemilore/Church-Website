@@ -1,8 +1,12 @@
 import React from 'react'
-import About1 from '../../assets/About1.png'
-import About2 from '../../assets/About2.png'
-import About3 from '../../assets/About3.png'
-import About4 from '../../assets/About4.png'
+import About1Src from '../../assets/About1.png?w=480;768;1024&format=avif;webp&as=srcset'
+import About1Fallback from '../../assets/About1.png?w=1024&format=png&as=src'
+import About2Src from '../../assets/About2.png?w=480;768;1024&format=avif;webp&as=srcset'
+import About2Fallback from '../../assets/About2.png?w=1024&format=png&as=src'
+import About3Src from '../../assets/About3.png?w=480;768;1024&format=avif;webp&as=srcset'
+import About3Fallback from '../../assets/About3.png?w=1024&format=png&as=src'
+import About4Src from '../../assets/About4.png?w=480;768;1024&format=avif;webp&as=srcset'
+import About4Fallback from '../../assets/About4.png?w=1024&format=png&as=src'
 
 const SUB_HEADER2 = () => {
   return (
@@ -27,7 +31,11 @@ const SUB_HEADER2 = () => {
               </div>
             </div>
             <div className="md:w-1/2">
-              <img src={About1} alt="image1" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+              <picture>
+                <source type="image/avif" srcSet={About1Src.avif} />
+                <source type="image/webp" srcSet={About1Src.webp} />
+                <img src={About1Fallback} alt="image1" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+              </picture>
             </div>
           </div>
 
@@ -42,7 +50,11 @@ const SUB_HEADER2 = () => {
               </div>
             </div>
             <div className="md:w-1/2">
-              <img src={About2} alt="image2" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+              <picture>
+                <source type="image/avif" srcSet={About2Src.avif} />
+                <source type="image/webp" srcSet={About2Src.webp} />
+                <img src={About2Fallback} alt="image2" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+              </picture>
             </div>
           </div>
 
@@ -57,7 +69,11 @@ const SUB_HEADER2 = () => {
               </div>
             </div>
             <div className="md:w-1/2">
-              <img src={About3} alt="image3" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+              <picture>
+                <source type="image/avif" srcSet={About3Src.avif} />
+                <source type="image/webp" srcSet={About3Src.webp} />
+                <img src={About3Fallback} alt="image3" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+              </picture>
             </div>
           </div>
 
@@ -72,7 +88,11 @@ const SUB_HEADER2 = () => {
               </div>
             </div>
             <div className="md:w-1/2">
-              <img src={About4} alt="image4" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+              <picture>
+                <source type="image/avif" srcSet={About4Src.avif} />
+                <source type="image/webp" srcSet={About4Src.webp} />
+                <img src={About4Fallback} alt="image4" className="w-full h-56 sm:h-64 object-cover rounded-lg shadow-md" />
+              </picture>
             </div>
           </div>
         </div>

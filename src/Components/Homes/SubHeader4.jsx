@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Home4 from '../../assets/Home4.svg'
 import Home5 from '../../assets/Home5.svg'
-import SubHeaderImg from '../../assets/SUB+HEADER.png'
+import SubHeaderImgSrc from '../../assets/SUB+HEADER.png?w=480;1024&format=avif;webp&as=srcset'
+import SubHeaderImgFallback from '../../assets/SUB+HEADER.png?w=1024&format=png&as=src'
 
 const SubHeader4 = () => {
   return (
@@ -58,7 +59,11 @@ const SubHeader4 = () => {
 
           {/* Image / Visual */}
           <div className="w-full flex items-center justify-center">
-            <img src={SubHeaderImg} alt="Sub Header" className="w-full max-w-md md:max-w-none h-56 md:h-96 object-cover rounded" />
+            <picture>
+              <source type="image/avif" srcSet={SubHeaderImgSrc.avif} />
+              <source type="image/webp" srcSet={SubHeaderImgSrc.webp} />
+              <img src={SubHeaderImgFallback} alt="Sub Header" className="w-full max-w-md md:max-w-none h-56 md:h-96 object-cover rounded" />
+            </picture>
           </div>
         </div>
 

@@ -3,14 +3,21 @@ import { Link } from 'react-router-dom'
 import FacebookIcon from '../../assets/Facebook.svg'
 import TwitterIcon from '../../assets/Twitter.svg'
 import LinkedinIcon from '../../assets/Linkedin.svg'
-import About5 from '../../assets/About5.png'
-import About6 from '../../assets/About6.png'
-import About7 from '../../assets/About7.png'
+import About5Src from '../../assets/About5.png?w=200;400&format=avif;webp&as=srcset'
+import About5Fallback from '../../assets/About5.png?w=400&format=png&as=src'
+import About6Src from '../../assets/About6.png?w=200;400&format=avif;webp&as=srcset'
+import About6Fallback from '../../assets/About6.png?w=400&format=png&as=src'
+import About7Src from '../../assets/About7.png?w=200;400&format=avif;webp&as=srcset'
+import About7Fallback from '../../assets/About7.png?w=400&format=png&as=src'
 import About8 from '../../assets/About8.png'
 
-const TeamCard = ({ img, name, role }) => (
+const TeamCard = ({ imgSrcSet, imgFallback, name, role }) => (
     <div className="bg-gray-100 rounded-lg p-6 flex flex-col items-center text-center shadow-sm">
-        <img src={img} alt={name} className="rounded-full border-4 border-white w-24 h-24 sm:w-28 sm:h-28 object-cover" />
+        <picture>
+          <source type="image/avif" srcSet={imgSrcSet?.avif} />
+          <source type="image/webp" srcSet={imgSrcSet?.webp} />
+          <img src={imgFallback} alt={name} className="rounded-full border-4 border-white w-24 h-24 sm:w-28 sm:h-28 object-cover" />
+        </picture>
         <p className="text-lg sm:text-xl font-bold mt-4">{name}</p>
         <p className="text-xs text-gray-600 mt-1">{role}</p>
         <div className="mt-3 flex gap-3">
@@ -29,10 +36,10 @@ const SUB_HEADER3 = () => {
                 <h2 className="uppercase font-bold text-2xl sm:text-3xl text-center mt-3">meet our inspirational team</h2>
 
                 <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                      <TeamCard img={About5} name="KIM BOWEN" role="Pastor, Church" />
-                      <TeamCard img={About6} name="DANIELLE WATKINS" role="Pastor, Church" />
-                      <TeamCard img={About7} name="NAOMI CRAIG" role="Pastor, Church" />
-                      <TeamCard img={About8} name="SANTOS PAYNE" role="Pastor, Church" />
+                      <TeamCard imgSrcSet={About5Src} imgFallback={About5Fallback} name="KIM BOWEN" role="Pastor, Church" />
+                      <TeamCard imgSrcSet={About6Src} imgFallback={About6Fallback} name="DANIELLE WATKINS" role="Pastor, Church" />
+                      <TeamCard imgSrcSet={About7Src} imgFallback={About7Fallback} name="NAOMI CRAIG" role="Pastor, Church" />
+                      <TeamCard imgFallback={About8} name="SANTOS PAYNE" role="Pastor, Church" />
                 </div>
             </div>
         </section>

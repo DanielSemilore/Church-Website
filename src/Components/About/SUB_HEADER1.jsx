@@ -1,7 +1,10 @@
 import React from 'react'
-import sub1 from '../../assets/Subheadline1.png'
-import sub2 from '../../assets/Subheadline2.png'
-import sub3 from '../../assets/Subheadline3.png'
+import sub1Src from '../../assets/Subheadline1.png?w=320;640;1024&format=avif;webp&as=srcset'
+import sub1Fallback from '../../assets/Subheadline1.png?w=1024&format=png&as=src'
+import sub2Src from '../../assets/Subheadline2.png?w=320;640;1024&format=avif;webp&as=srcset'
+import sub2Fallback from '../../assets/Subheadline2.png?w=1024&format=png&as=src'
+import sub3Src from '../../assets/SubHeadline3.png?w=480;768;1024&format=avif;webp&as=srcset'
+import sub3Fallback from '../../assets/SubHeadline3.png?w=1024&format=png&as=src'
 
 const SUB_HEADER1 = () => {
   return (
@@ -20,9 +23,21 @@ const SUB_HEADER1 = () => {
 
         {/* image gallery - stacks on small screens */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
-          <img src={sub1} alt="first image" loading="lazy" className="rounded-lg shadow-md w-full h-48 sm:h-56 object-cover" />
-          <img src={sub2} alt="second image" loading="lazy" className="rounded-lg shadow-md w-full h-48 sm:h-56 object-cover" />
-          <img src={sub3} alt="third image" loading="lazy" className="rounded-lg shadow-md w-full h-48 sm:h-56 object-cover" />
+          <picture>
+            <source type="image/avif" srcSet={sub1Src.avif} />
+            <source type="image/webp" srcSet={sub1Src.webp} />
+            <img src={sub1Fallback} alt="first image" loading="lazy" className="rounded-lg shadow-md w-full h-48 sm:h-56 object-cover" />
+          </picture>
+          <picture>
+            <source type="image/avif" srcSet={sub2Src.avif} />
+            <source type="image/webp" srcSet={sub2Src.webp} />
+            <img src={sub2Fallback} alt="second image" loading="lazy" className="rounded-lg shadow-md w-full h-48 sm:h-56 object-cover" />
+          </picture>
+          <picture>
+            <source type="image/avif" srcSet={sub3Src.avif} />
+            <source type="image/webp" srcSet={sub3Src.webp} />
+            <img src={sub3Fallback} alt="third image" loading="lazy" className="rounded-lg shadow-md w-full h-48 sm:h-56 object-cover" />
+          </picture>
         </div>
 
         {/* two-column details that collapse on small screens */}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Event1 from '../../assets/Event1.png'
+import Event1Src from '../../assets/Event1.png?w=480;768;1024&format=avif;webp&as=srcset'
+import Event1Fallback from '../../assets/Event1.png?w=1024&format=png&as=src'
 import Home4 from '../../assets/Home4.svg'
 import Home5 from '../../assets/Home5.svg'
 
@@ -11,7 +12,11 @@ const Event_subheader1 = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           {/* Left: event details */}
           <div className="space-y-4">
-            <img src={Event1} alt="eventimage1" className="w-full max-w-xl h-auto rounded" />
+              <picture>
+                <source type="image/avif" srcSet={Event1Src.avif} />
+                <source type="image/webp" srcSet={Event1Src.webp} />
+                <img src={Event1Fallback} alt="eventimage1" className="w-full max-w-xl h-auto rounded" />
+              </picture>
             <p className="text-xs font-semibold uppercase text-amber-600">upcoming sermon</p>
             <h1 className="uppercase font-bold text-2xl md:text-4xl">HOW TO TRULY TRUST SOMEONE</h1>
             <div className="space-y-2 text-sm text-gray-800">
