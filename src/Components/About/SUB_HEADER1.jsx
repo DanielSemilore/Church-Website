@@ -1,9 +1,6 @@
 import React from 'react'
-import sub1Src from '../../assets/Subheadline1.png'
-import sub1Fallback from '../../assets/Subheadline1.png'
-import sub2Src from '../../assets/Subheadline2.png'
-import sub2Fallback from '../../assets/Subheadline2.png'
-import sub3Src from '../../assets/SubHeadline3.png'
+import sub1Fallback from '../../assets/Sub+headline1.png'
+import sub2Fallback from '../../assets/Sub+headline2.png'
 import sub3Fallback from '../../assets/SubHeadline3.png'
 
 const SUB_HEADER1 = () => {
@@ -24,18 +21,12 @@ const SUB_HEADER1 = () => {
         {/* image gallery - stacks on small screens */}
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
           <picture>
-            <source type="image/avif" srcSet={sub1Src.avif} />
-            <source type="image/webp" srcSet={sub1Src.webp} />
             <img src={sub1Fallback} alt="first image" loading="lazy" className="rounded-lg shadow-md w-full h-48 sm:h-56 object-cover" />
           </picture>
           <picture>
-            <source type="image/avif" srcSet={sub2Src.avif} />
-            <source type="image/webp" srcSet={sub2Src.webp} />
             <img src={sub2Fallback} alt="second image" loading="lazy" className="rounded-lg shadow-md w-full h-48 sm:h-56 object-cover" />
           </picture>
           <picture>
-            <source type="image/avif" srcSet={sub3Src.avif} />
-            <source type="image/webp" srcSet={sub3Src.webp} />
             <img src={sub3Fallback} alt="third image" loading="lazy" className="rounded-lg shadow-md w-full h-48 sm:h-56 object-cover" />
           </picture>
         </div>
