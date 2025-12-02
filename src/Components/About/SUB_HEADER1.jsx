@@ -1,10 +1,10 @@
 import React from 'react'
-import sub1Src from '../../assets/Subheadline1.png?w=320;640;1024&format=avif;webp&as=srcset'
-import sub1Fallback from '../../assets/Subheadline1.png?w=1024&format=png&as=src'
-import sub2Src from '../../assets/Subheadline2.png?w=320;640;1024&format=avif;webp&as=srcset'
-import sub2Fallback from '../../assets/Subheadline2.png?w=1024&format=png&as=src'
-import sub3Src from '../../assets/SubHeadline3.png?w=480;768;1024&format=avif;webp&as=srcset'
-import sub3Fallback from '../../assets/SubHeadline3.png?w=1024&format=png&as=src'
+import sub1Src from '../../assets/Subheadline1.png'
+import sub1Fallback from '../../assets/Subheadline1.png'
+import sub2Src from '../../assets/Subheadline2.png'
+import sub2Fallback from '../../assets/Subheadline2.png'
+import sub3Src from '../../assets/SubHeadline3.png'
+import sub3Fallback from '../../assets/SubHeadline3.png'
 
 const SUB_HEADER1 = () => {
   return (
